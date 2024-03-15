@@ -1,0 +1,110 @@
+<header class="header theme-bg-white">
+    <div class="container">
+        <nav class="navbar navbar-expand-lg py-3 py-lg-0 px-0">
+            <a class="navbar-brand" routerLink="/home">
+                <img height="2000px" width="100px" src="{{companyList[0].imagePath | pipe}}" alt="Brand Logo"
+                    title="Brand Logo" class="img-fluid"></a>
+            <button class="navbar-toggler px-1 btn rounded-0" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span style="background-image: url('../../../assets/images/menu.png');"
+                    class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto page-menu" id="nav">
+                    <li class="nav-item"><a class="nav-link pe-5 ps-0 ps-lg-5"
+                            routerLink="/home">{{'header-Home'|translate}}</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link pe-5" routerLink="/about">{{'header-AboutUs'|translate}}</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link pe-5"
+                            routerLink="/destinations">{{'header-Tours'|translate}}</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link pe-5" routerLink="/tours">
+                            {{"header-Packages"|translate}}</a></li>
+                    <li class="nav-item"><a class="nav-link pe-5" routerLink="/contact">
+                            {{"header-Contacts" | translate}}</a></li>
+                    <li class="nav-item"><a class="nav-link pe-5" routerLink="/booking">
+                            {{"header-booking" | translate}}</a></li>
+                </ul>
+                <div class="d-flex menu-droup">
+                    <ul class="navbar-nav page-menu">
+                        <!-- language list -->
+                        <!-- <select (change)="selectedLanguage($event)" name="" id="">
+                            <option value="eng">English</option>
+                            <option value="ru">Русский</option>
+                            <option value="uz">Uzbek</option>
+                        </select> -->
+                        <img (click)="selectedLanguage('ru')" style="width: 40px; height: 35px; margin: 10px;"
+                            src="../../../assets/images/flags/russia.png" alt="img">
+                        <img (click)="selectedLanguage('eng')" style="width: 40px; height: 35px; margin: 10px;"
+                            src="../../../assets/images/flags/united-states.png" alt="img">
+                        <img (click)="selectedLanguage('uz')" style="width: 40px; height: 35px; margin: 10px;"
+                            src="../../../assets/images/flags/uzbekistan.png" alt="img">
+                        <!-- Currency list -->
+                        <!-- <li class="nav-item dropdown">
+                            <a href="#" class="nav-link mein-link dropdown-toggle" id="navbarDropdown2"
+                                data-bs-toggle="dropdown" aria-expanded="false">INR</a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown2">
+                                <li><a class="dropdown-item" href="#">USD</a></li>
+                                <li><a class="dropdown-item" href="#">EUR</a>
+                                </li>
+                            </ul>
+                        </li> -->
+                        <!-- user account  -->
+                        <!-- <li class="nav-item dropdown my-auto">
+                            <a href="#" class="nav-link dropdown-toggle p-0 user" id="navbarDropdown3"
+                                data-bs-toggle="dropdown" aria-expanded="false"><span
+                                    class="d-inline-block p-2 theme-bg-primary rounded-circle lh-1"><i
+                                        class="bi bi-person"></i></span></a>
+                            <ul class="dropdown-menu dropdown-menu-end sub-menu" aria-labelledby="navbarDropdown3">
+                                <li><a class="dropdown-item" id="sign-in-cutom" routerLink="/sign-in">Sign in</a>
+                                </li>
+                                <li><a class="dropdown-item" routerLink="/sign-up">Register</a>
+                                </li>
+                            </ul>
+                        </li> -->
+                    </ul>
+                    <!-- notificaton bell content -->
+                    <!-- <ul class="notification-drop">
+                        <li class="item">
+                            <i class="bi bi-bell" aria-hidden="true"></i> <span class="badge">3+</span>
+                            <ul>
+                                <li>
+                                    <div class="d-flex align-items-center">
+                                        <div class="flex-shrink-0">
+                                            <img src="../../../assets/images/notify/1.png" alt="notification">
+                                        </div>
+                                        <div class="flex-grow-1 ms-3">
+                                            This is some content from a Notify
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="d-flex align-items-center">
+                                        <div class="flex-shrink-0">
+                                            <img src="../../../assets/images/notify/3.png" alt="notification">
+                                        </div>
+                                        <div class="flex-grow-1 ms-3">
+                                            This is some content from a Notify
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="d-flex align-items-center">
+                                        <div class="flex-shrink-0">
+                                            <img src="../../../assets/images/notify/2.png" alt="notification">
+                                        </div>
+                                        <div class="flex-grow-1 ms-3">
+                                            This is some content from a Notify
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul> -->
+                </div>
+            </div>
+        </nav>
+    </div>
+</header>

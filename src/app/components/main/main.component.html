@@ -1,0 +1,2438 @@
+<div>
+    <!-- loader section -->
+    <!-- <div id="preloder">
+        <div class="loading">
+            <div>G</div>
+            <div>N</div>
+            <div>I</div>
+            <div>D</div>
+            <div>A</div>
+            <div>O</div>
+            <div>L</div>
+        </div>
+    </div> -->
+
+    <!-- page content area -->
+    <div class="pagewrap">
+        <div class="head-wrapper">
+            <!-- header section -->
+            <app-header></app-header>
+            <!-- search engine section-->
+            <div class="search-engine">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-lg-12 mb-5 text-center position-relative">
+                            <h1 class="display-3 fw-bold mb-4 theme-text-white theme-text-shadow text-uppercase">
+                                {{"main-title" | translate}}
+                            </h1>
+                            <p class="mb-0 theme-text-white">{{"main-title-tegi" | translate}}</p>
+                        </div>
+                    </div>
+                    <!-- search engine tabs -->
+
+
+                    <div class="row mt-0 mt-lg-5">
+                        <div class="col-12 col-lg-10 offset-lg-1 mb-5 text-center position-relative">
+                            <!-- product main tab list -->
+                            <!-- <ul class="nav nav-tabs d-flex justify-content-center border-0 cust-tab" id="myTab"
+                                role="tablist">
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link active" id="flight-tab" data-bs-toggle="tab"
+                                        data-bs-target="#flight-tab-pane" type="button" role="tab"
+                                        aria-controls="flight-tab-pane" aria-selected="true">Flights</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="hotel-tab" data-bs-toggle="tab"
+                                        data-bs-target="#hotel-tab-pane" type="button" role="tab"
+                                        aria-controls="hotel-tab-pane" aria-selected="false">Hotel</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="holiday-tab" data-bs-toggle="tab"
+                                        data-bs-target="#holiday-tab-pane" type="button" role="tab"
+                                        aria-controls="holiday-tab-pane" aria-selected="false">Holidays</button>
+                                </li> -->
+                            <!-- </ul> -->
+                            <!-- product main tab content -->
+                            <div class="tab-content mt-3" id="myTabContent">
+                                <!-- flight search tab -->
+                                <div class="tab-pane fade show active" id="flight-tab-pane" role="tabpanel"
+                                    aria-labelledby="flight-tab" tabindex="0">
+                                    <!-- flight multiple search tab -->
+                                    <ul class="nav nav-pills cust-pills" id="pills-tab" role="tablist">
+                                        <li class="nav-item" role="presentation">
+                                            <button class="nav-link active" id="pills-oneway-tab" data-bs-toggle="pill"
+                                                data-bs-target="#pills-oneway" type="button" role="tab"
+                                                aria-controls="pills-oneway" aria-selected="true">
+                                                <span
+                                                    class="d-inline-block p-2 rounded-circle bg-white align-middle me-2"></span>
+                                                {{"main-oneWay" | translate}}</button>
+                                        </li>
+                                        <li class="nav-item" role="presentation">
+                                            <button class="nav-link" id="pills-Round-tab" data-bs-toggle="pill"
+                                                data-bs-target="#pills-Round" type="button" role="tab"
+                                                aria-controls="pills-Round" aria-selected="false">
+                                                <span
+                                                    class="d-inline-block p-2 rounded-circle bg-white align-middle me-2"></span>
+                                                {{"main-roundTrip" | translate}}</button>
+                                        </li>
+                                        <li class="nav-item" role="presentation">
+                                            <button class="nav-link" id="pills-multiCity-tab" data-bs-toggle="pill"
+                                                data-bs-target="#pills-multiCity" type="button" role="tab"
+                                                aria-controls="pills-multiCity" aria-selected="false">
+                                                <span
+                                                    class="d-inline-block p-2 rounded-circle bg-white align-middle me-2"></span>
+                                                {{"main-multiCity" | translate}}</button>
+                                        </li>
+                                    </ul>
+                                    <div class="tab-content" id="pills-tabContent">
+                                        <div class="tab-pane fade show active" id="pills-oneway" role="tabpanel"
+                                            aria-labelledby="pills-oneway-tab" tabindex="0">
+                                            <div class="row">
+                                                <div class="col-12">
+                                                    <div class="search-pan row mx-0 theme-border-radius">
+                                                        <div
+                                                            class="col-12 col-lg-4 col-xl-2 ps-0 mb-2 mb-xl-0 pe-0 pe-lg-2">
+                                                            <div class="form-group">
+                                                                <label for="exampleDataList" class="form-label">
+                                                                    {{"main-departFrom" | translate}}
+                                                                </label>
+                                                                <input class="form-control" list="datalistOptions1"
+                                                                    id="exampleDataList" placeholder="New Delhi">
+                                                                <datalist id="datalistOptions1">
+                                                                    <option value="San Francisco">
+                                                                    <option value="New York">
+                                                                    <option value="Seattle">
+                                                                    <option value="Los Angeles">
+                                                                    <option value="Chicago">
+                                                                </datalist>
+                                                            </div>
+                                                        </div>
+                                                        <div
+                                                            class="col-12 col-lg-4 col-xl-2 ps-0 mb-2 mb-xl-0 pe-0 pe-lg-2">
+                                                            <div class="form-group">
+                                                                <label for="exampleDataList2" class="form-label">
+                                                                    {{"main-ariivalTo" | translate}}
+                                                                </label>
+                                                                <input class="form-control" list="datalistOptions2"
+                                                                    id="exampleDataList2" placeholder="London">
+                                                                <datalist id="datalistOptions2">
+                                                                    <option value="San Francisco">
+                                                                    <option value="New York">
+                                                                    <option value="Seattle">
+                                                                    <option value="Los Angeles">
+                                                                    <option value="Chicago">
+                                                                </datalist>
+                                                            </div>
+                                                        </div>
+                                                        <div
+                                                            class="col-12 col-lg-4 col-xl-3 ps-0 mb-2 mb-xl-0 pe-0 pe-lg-0 pe-xl-2">
+                                                            <div class="form-group">
+                                                                <label class="form-label">{{"main-depaturteTo" |
+                                                                    translate}}</label>
+                                                                <input type="text" class="form-control"
+                                                                    placeholder="Wed 2 Mar">
+                                                            </div>
+                                                        </div>
+                                                        <!-- <div
+                                                            class="col-12 col-lg-6 col-xl-3 ps-0 mb-2 mb-lg-0 mb-xl-0 pe-0 pe-lg-2">
+                                                            <div class="form-group border-0">
+                                                                <label class="form-label">Traveller's
+                                                                </label>
+                                                                <div class="dropdown" id="myDD1">
+                                                                    <button class="dropdown-toggle form-control"
+                                                                        type="button" id="travellerInfoOneway11"
+                                                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                                                        <span class="text-truncate">2 adults - 1
+                                                                            childeren - 1 Infants
+                                                                        </span>
+                                                                    </button>
+                                                                    <div class="dropdown-menu"
+                                                                        aria-labelledby="travellerInfoOneway11">
+                                                                        <ul class="drop-rest">
+                                                                            <li>
+                                                                                <div class="d-flex small">Adults
+                                                                                </div>
+                                                                                <div
+                                                                                    class="ms-auto input-group plus-minus-input">
+                                                                                    <div class="input-group-button">
+                                                                                        <button type="button"
+                                                                                            class="circle"
+                                                                                            data-quantity="minus"
+                                                                                            data-field="onewayAdult">
+                                                                                            <i class="bi bi-dash"></i>
+                                                                                        </button>
+                                                                                    </div>
+                                                                                    <input class="input-group-field"
+                                                                                        type="number" name="onewayAdult"
+                                                                                        value="0">
+                                                                                    <div class="input-group-button">
+                                                                                        <button type="button"
+                                                                                            class="circle"
+                                                                                            data-quantity="plus"
+                                                                                            data-field="onewayAdult">
+                                                                                            <i class="bi bi-plus"></i>
+                                                                                        </button>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </li>
+                                                                            <li>
+                                                                                <div class="d-flex small">Child
+                                                                                </div>
+                                                                                <div
+                                                                                    class="ms-auto input-group plus-minus-input">
+                                                                                    <div class="input-group-button">
+                                                                                        <button type="button"
+                                                                                            class="circle"
+                                                                                            data-quantity="minus"
+                                                                                            data-field="onewayChild">
+                                                                                            <i class="bi bi-dash"></i>
+                                                                                        </button>
+                                                                                    </div>
+                                                                                    <input class="input-group-field"
+                                                                                        type="number" name="onewayChild"
+                                                                                        value="0">
+                                                                                    <div class="input-group-button">
+                                                                                        <button type="button"
+                                                                                            class="circle"
+                                                                                            data-quantity="plus"
+                                                                                            data-field="onewayChild">
+                                                                                            <i class="bi bi-plus"></i>
+                                                                                        </button>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </li>
+                                                                            <li>
+                                                                                <div class="d-flex small">Infants
+                                                                                </div>
+                                                                                <div
+                                                                                    class="ms-auto input-group plus-minus-input">
+                                                                                    <div class="input-group-button">
+                                                                                        <button type="button"
+                                                                                            class="circle"
+                                                                                            data-quantity="minus"
+                                                                                            data-field="onewayInfant">
+                                                                                            <i class="bi bi-dash"></i>
+                                                                                        </button>
+                                                                                    </div>
+                                                                                    <input class="input-group-field"
+                                                                                        type="number"
+                                                                                        name="onewayInfant" value="0">
+                                                                                    <div class="input-group-button">
+                                                                                        <button type="button"
+                                                                                            class="circle"
+                                                                                            data-quantity="plus"
+                                                                                            data-field="onewayInfant">
+                                                                                            <i class="bi bi-plus"></i>
+                                                                                        </button>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div> -->
+                                                        <div class="col-12 col-lg-6 col-xl-2 px-0">
+                                                            <button type="submit" class="btn btn-search"
+                                                                onclick="window.location.href='#';">
+                                                                <span class="fw-bold"><i class="bi bi-search me-2"></i>
+                                                                    {{"main-search" |translate}}</span>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- <div class="col-12 mt-2">
+                                                    <div class="d-flex flex-sm-row flex-column">
+                                                        <div class="me-2 mb-2 mb-lg-0">
+                                                            <div class="switch mode-switch">
+                                                                <input type="checkbox" name="stop_mode" id="stop_mode"
+                                                                    value="1">
+                                                                <label for="stop_mode" data-on="NonStop" data-off="Stop"
+                                                                    class="mode-switch-inner"></label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="me-2">
+                                                            <div class="switch mode-switch">
+                                                                <input type="checkbox" name="class_mode" id="class_mode"
+                                                                    value="1">
+                                                                <label for="class_mode" data-on="Premium"
+                                                                    data-off="Economy"
+                                                                    class="mode-switch-inner"></label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div> -->
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane fade" id="pills-Round" role="tabpanel"
+                                            aria-labelledby="pills-Round-tab" tabindex="0">
+                                            <div class="row">
+                                                <div class="col-12">
+                                                    <div class="search-pan row mx-0 theme-border-radius">
+                                                        <div
+                                                            class="col-12 col-lg-4 col-xl-2 ps-0 mb-2 mb-xl-0 pe-0 pe-lg-2">
+                                                            <div class="form-group">
+                                                                <label for="exampleDataList1" class="form-label">
+                                                                    {{"main-departFrom" | translate}}
+
+                                                                </label>
+                                                                <input class="form-control" list="datalistOptions3"
+                                                                    id="exampleDataList1" placeholder="New Delhi">
+                                                                <datalist id="datalistOptions3">
+                                                                    <option value="San Francisco">
+                                                                    <option value="New York">
+                                                                    <option value="Seattle">
+                                                                    <option value="Los Angeles">
+                                                                    <option value="Chicago">
+                                                                </datalist>
+                                                            </div>
+                                                        </div>
+                                                        <div
+                                                            class="col-12 col-lg-4 col-xl-2 ps-0 mb-2 mb-xl-0 pe-0 pe-lg-2">
+                                                            <div class="form-group">
+                                                                <label for="exampleDataList3" class="form-label">
+                                                                    {{"main-ariivalTo" | translate}}
+
+                                                                </label>
+                                                                <input class="form-control" list="datalistOptions4"
+                                                                    id="exampleDataList3" placeholder="London">
+                                                                <datalist id="datalistOptions4">
+                                                                    <option value="San Francisco">
+                                                                    <option value="New York">
+                                                                    <option value="Seattle">
+                                                                    <option value="Los Angeles">
+                                                                    <option value="Chicago">
+                                                                </datalist>
+                                                            </div>
+                                                        </div>
+                                                        <div
+                                                            class="col-12 col-lg-4 col-xl-3 ps-0 mb-2 mb-xl-0 pe-0 pe-lg-0 pe-xl-2">
+                                                            <div class="form-group">
+                                                                <label class="form-label">
+                                                                    {{"main-deAr" | translate}}</label>
+                                                                <input type="text" class="form-control"
+                                                                    placeholder="Wed 2 Mar  -  Fri 11 Apr">
+                                                            </div>
+                                                        </div>
+                                                        <!-- <div
+                                                            class="col-12 col-lg-6 col-xl-3 ps-0 mb-2 mb-lg-0 mb-xl-0 pe-0 pe-lg-2">
+                                                            <div class="form-group border-0">
+                                                                <label class="form-label">Traveller's
+                                                                </label>
+                                                                <div class="dropdown" id="myDD2">
+                                                                    <button class="dropdown-toggle form-control"
+                                                                        type="button" id="travellerInfoOneway51"
+                                                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                                                        <span class="text-truncate">2 adults - 1
+                                                                            childeren - 1 Infants
+                                                                        </span>
+                                                                    </button>
+                                                                    <div class="dropdown-menu"
+                                                                        aria-labelledby="travellerInfoOneway51">
+                                                                        <ul class="drop-rest">
+                                                                            <li>
+                                                                                <div class="d-flex small">Adults
+                                                                                </div>
+                                                                                <div
+                                                                                    class="ms-auto input-group plus-minus-input">
+                                                                                    <div class="input-group-button">
+                                                                                        <button type="button"
+                                                                                            class="circle"
+                                                                                            data-quantity="minus"
+                                                                                            data-field="onewayAdult">
+                                                                                            <i class="bi bi-dash"></i>
+                                                                                        </button>
+                                                                                    </div>
+                                                                                    <input class="input-group-field"
+                                                                                        type="number" name="onewayAdult"
+                                                                                        value="0">
+                                                                                    <div class="input-group-button">
+                                                                                        <button type="button"
+                                                                                            class="circle"
+                                                                                            data-quantity="plus"
+                                                                                            data-field="onewayAdult">
+                                                                                            <i class="bi bi-plus"></i>
+                                                                                        </button>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </li>
+                                                                            <li>
+                                                                                <div class="d-flex small">Child
+                                                                                </div>
+                                                                                <div
+                                                                                    class="ms-auto input-group plus-minus-input">
+                                                                                    <div class="input-group-button">
+                                                                                        <button type="button"
+                                                                                            class="circle"
+                                                                                            data-quantity="minus"
+                                                                                            data-field="onewayChild">
+                                                                                            <i class="bi bi-dash"></i>
+                                                                                        </button>
+                                                                                    </div>
+                                                                                    <input class="input-group-field"
+                                                                                        type="number" name="onewayChild"
+                                                                                        value="0">
+                                                                                    <div class="input-group-button">
+                                                                                        <button type="button"
+                                                                                            class="circle"
+                                                                                            data-quantity="plus"
+                                                                                            data-field="onewayChild">
+                                                                                            <i class="bi bi-plus"></i>
+                                                                                        </button>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </li>
+                                                                            <li>
+                                                                                <div class="d-flex small">Infants
+                                                                                </div>
+                                                                                <div
+                                                                                    class="ms-auto input-group plus-minus-input">
+                                                                                    <div class="input-group-button">
+                                                                                        <button type="button"
+                                                                                            class="circle"
+                                                                                            data-quantity="minus"
+                                                                                            data-field="onewayInfant">
+                                                                                            <i class="bi bi-dash"></i>
+                                                                                        </button>
+                                                                                    </div>
+                                                                                    <input class="input-group-field"
+                                                                                        type="number"
+                                                                                        name="onewayInfant" value="0">
+                                                                                    <div class="input-group-button">
+                                                                                        <button type="button"
+                                                                                            class="circle"
+                                                                                            data-quantity="plus"
+                                                                                            data-field="onewayInfant">
+                                                                                            <i class="bi bi-plus"></i>
+                                                                                        </button>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div> -->
+                                                        <div class="col-12 col-lg-6 col-xl-2 px-0">
+                                                            <button type="submit" class="btn btn-search"
+                                                                onclick="window.location.href='#';">
+                                                                <span class="fw-bold"><i class="bi bi-search me-2"></i>
+                                                                    {{"main-search" |translate}}</span>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane fade" id="pills-multiCity" role="tabpanel"
+                                            aria-labelledby="pills-multiCity-tab" tabindex="0">
+                                            <div class="row">
+                                                <div class="col-12">
+                                                    <div class="search-pan row mx-0 theme-border-radius">
+                                                        <div
+                                                            class="col-12 col-lg-4 col-xl-2 ps-0 mb-2 mb-xl-0 pe-0 pe-lg-2">
+                                                            <div class="form-group">
+                                                                <label for="exampleDataList13" class="form-label">
+                                                                    {{"main-departFrom" | translate}}
+
+                                                                </label>
+                                                                <input class="form-control" list="datalistOptions14"
+                                                                    id="exampleDataList13" placeholder="New Delhi">
+                                                                <datalist id="datalistOptions14">
+                                                                    <option value="San Francisco">
+                                                                    <option value="New York">
+                                                                    <option value="Seattle">
+                                                                    <option value="Los Angeles">
+                                                                    <option value="Chicago">
+                                                                </datalist>
+                                                            </div>
+                                                        </div>
+                                                        <div
+                                                            class="col-12 col-lg-4 col-xl-2 ps-0 mb-2 mb-xl-0 pe-0 pe-lg-2">
+                                                            <div class="form-group">
+                                                                <label for="exampleDataList4" class="form-label">
+                                                                    {{"main-ariivalTo" | translate}}
+
+                                                                </label>
+                                                                <input class="form-control" list="datalistOptions5"
+                                                                    id="exampleDataList4" placeholder="London">
+                                                                <datalist id="datalistOptions5">
+                                                                    <option value="San Francisco">
+                                                                    <option value="New York">
+                                                                    <option value="Seattle">
+                                                                    <option value="Los Angeles">
+                                                                    <option value="Chicago">
+                                                                </datalist>
+                                                            </div>
+                                                        </div>
+                                                        <div
+                                                            class="col-12 col-lg-4 col-xl-2 ps-0 mb-2 mb-xl-0 pe-0 pe-lg-0 pe-xl-2">
+                                                            <div class="form-group">
+                                                                <label class="form-label">{{"main-depaturteTo" |
+                                                                    translate}}</label>
+                                                                <input type="text" class="form-control"
+                                                                    placeholder="Wed 2 Mar">
+                                                            </div>
+                                                        </div>
+                                                        <!-- <div
+                                                            class="col-12 col-lg-6 col-xl-3 ps-0 mb-2 mb-lg-0 mb-xl-0 pe-0 pe-lg-2">
+                                                            <div class="form-group border-0">
+                                                                <label class="form-label">Traveller's
+                                                                </label>
+                                                                <div class="dropdown" id="myDD3">
+                                                                    <button class="dropdown-toggle form-control"
+                                                                        type="button" id="travellerInfoOneway21"
+                                                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                                                        <span class="text-truncate">2 adults - 1
+                                                                            childeren - 1 Infants
+                                                                        </span>
+                                                                    </button>
+                                                                    <div class="dropdown-menu"
+                                                                        aria-labelledby="travellerInfoOneway21">
+                                                                        <ul class="drop-rest">
+                                                                            <li>
+                                                                                <div class="d-flex small">Adults
+                                                                                </div>
+                                                                                <div
+                                                                                    class="ms-auto input-group plus-minus-input">
+                                                                                    <div class="input-group-button">
+                                                                                        <button type="button"
+                                                                                            class="circle"
+                                                                                            data-quantity="minus"
+                                                                                            data-field="onewayAdult">
+                                                                                            <i class="bi bi-dash"></i>
+                                                                                        </button>
+                                                                                    </div>
+                                                                                    <input class="input-group-field"
+                                                                                        type="number" name="onewayAdult"
+                                                                                        value="0">
+                                                                                    <div class="input-group-button">
+                                                                                        <button type="button"
+                                                                                            class="circle"
+                                                                                            data-quantity="plus"
+                                                                                            data-field="onewayAdult">
+                                                                                            <i class="bi bi-plus"></i>
+                                                                                        </button>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </li>
+                                                                            <li>
+                                                                                <div class="d-flex small">Child
+                                                                                </div>
+                                                                                <div
+                                                                                    class="ms-auto input-group plus-minus-input">
+                                                                                    <div class="input-group-button">
+                                                                                        <button type="button"
+                                                                                            class="circle"
+                                                                                            data-quantity="minus"
+                                                                                            data-field="onewayChild">
+                                                                                            <i class="bi bi-dash"></i>
+                                                                                        </button>
+                                                                                    </div>
+                                                                                    <input class="input-group-field"
+                                                                                        type="number" name="onewayChild"
+                                                                                        value="0">
+                                                                                    <div class="input-group-button">
+                                                                                        <button type="button"
+                                                                                            class="circle"
+                                                                                            data-quantity="plus"
+                                                                                            data-field="onewayChild">
+                                                                                            <i class="bi bi-plus"></i>
+                                                                                        </button>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </li>
+                                                                            <li>
+                                                                                <div class="d-flex small">Infants
+                                                                                </div>
+                                                                                <div
+                                                                                    class="ms-auto input-group plus-minus-input">
+                                                                                    <div class="input-group-button">
+                                                                                        <button type="button"
+                                                                                            class="circle"
+                                                                                            data-quantity="minus"
+                                                                                            data-field="onewayInfant">
+                                                                                            <i class="bi bi-dash"></i>
+                                                                                        </button>
+                                                                                    </div>
+                                                                                    <input class="input-group-field"
+                                                                                        type="number"
+                                                                                        name="onewayInfant" value="0">
+                                                                                    <div class="input-group-button">
+                                                                                        <button type="button"
+                                                                                            class="circle"
+                                                                                            data-quantity="plus"
+                                                                                            data-field="onewayInfant">
+                                                                                            <i class="bi bi-plus"></i>
+                                                                                        </button>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div> -->
+                                                        <div class="col-12 col-lg-6 col-xl-3 px-0">
+                                                            <div class="d-flex">
+                                                                <!-- <button type="button" class="btn sector-add me-1">+ Add
+                                                                    Sector</button> -->
+                                                                <button type="submit" class="btn btn-search"
+                                                                    onclick="window.location.href='#';">
+                                                                    <span class="fw-bold"><i
+                                                                            class="bi bi-search me-2"></i>
+                                                                        {{"main-search" | translate}}</span>
+                                                                </button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row mt-2">
+                                                        <!-- <div class="col-12 col-lg-6">
+                                                            <div class="search-pan row mx-0 theme-border-radius">
+                                                                <div
+                                                                    class="col-12 col-lg-4 col-xl-4 ps-0 mb-2 mb-xl-0 pe-0 pe-lg-2">
+                                                                    <div class="form-group">
+                                                                        <label for="exampleDataList5"
+                                                                            class="form-label">Depart
+                                                                            From</label>
+                                                                        <input class="form-control"
+                                                                            list="datalistOptions24"
+                                                                            id="exampleDataList5"
+                                                                            placeholder="New Delhi">
+                                                                        <datalist id="datalistOptions24">
+                                                                            <option value="San Francisco">
+                                                                            <option value="New York">
+                                                                            <option value="Seattle">
+                                                                            <option value="Los Angeles">
+                                                                            <option value="Chicago">
+                                                                        </datalist>
+                                                                    </div>
+                                                                </div>
+                                                                <div
+                                                                    class="col-12 col-lg-4 col-xl-4 ps-0 mb-2 mb-xl-0 pe-0 pe-lg-2">
+                                                                    <div class="form-group">
+                                                                        <label for="exampleDataList6"
+                                                                            class="form-label">Arrival
+                                                                            To</label>
+                                                                        <input class="form-control"
+                                                                            list="datalistOptions16"
+                                                                            id="exampleDataList6" placeholder="London">
+                                                                        <datalist id="datalistOptions16">
+                                                                            <option value="San Francisco">
+                                                                            <option value="New York">
+                                                                            <option value="Seattle">
+                                                                            <option value="Los Angeles">
+                                                                            <option value="Chicago">
+                                                                        </datalist>
+                                                                    </div>
+                                                                </div>
+                                                                <div
+                                                                    class="col-12 col-lg-4 col-xl-4 ps-0 mb-2 mb-xl-0 pe-0 pe-lg-0 pe-xl-2">
+                                                                    <div class="form-group border-0">
+                                                                        <label class="form-label">Departure Date</label>
+                                                                        <input type="text" class="form-control"
+                                                                            placeholder="Wed 2 Mar">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div> -->
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="tab-pane fade" id="hotel-tab-pane" role="tabpanel"
+                                    aria-labelledby="hotel-tab" tabindex="0">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <div class="search-pan row mx-0 theme-border-radius">
+                                                <div class="col-12 col-lg-4 col-xl-2 ps-0 mb-2 mb-xl-0 pe-0 pe-lg-2">
+                                                    <div class="form-group">
+                                                        <label for="exampleDataList7" class="form-label">Country
+                                                            <i class="bi bi-caret-down-fill small"></i>
+                                                        </label>
+                                                        <input class="form-control" list="datalistOptions15"
+                                                            id="exampleDataList7" placeholder="India">
+                                                        <datalist id="datalistOptions15">
+                                                            <option value="San Francisco">
+                                                            <option value="New York">
+                                                            <option value="Seattle">
+                                                            <option value="Los Angeles">
+                                                            <option value="Chicago">
+                                                        </datalist>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 col-lg-4 col-xl-2 ps-0 mb-2 mb-xl-0 pe-0 pe-lg-2">
+                                                    <div class="form-group">
+                                                        <label for="exampleDataList8" class="form-label">Location
+                                                            <i class="bi bi-caret-down-fill small"></i>
+                                                        </label>
+                                                        <input class="form-control" list="datalistOptions7"
+                                                            id="exampleDataList8" placeholder="New Delhi">
+                                                        <datalist id="datalistOptions7">
+                                                            <option value="San Francisco">
+                                                            <option value="New York">
+                                                            <option value="Seattle">
+                                                            <option value="Los Angeles">
+                                                            <option value="Chicago">
+                                                        </datalist>
+                                                    </div>
+                                                </div>
+                                                <div
+                                                    class="col-12 col-lg-4 col-xl-3 ps-0 mb-2 mb-xl-0 pe-0 pe-lg-0 pe-xl-2">
+                                                    <div class="form-group">
+                                                        <label class="form-label">Check in Date - Check out Date</label>
+                                                        <input type="text" class="form-control"
+                                                            placeholder="Wed 2 Mar  -  Fri 11 Apr">
+                                                    </div>
+                                                </div>
+                                                <div
+                                                    class="col-12 col-lg-6 col-xl-3 ps-0 mb-2 mb-lg-0 mb-xl-0 pe-0 pe-lg-2">
+                                                    <div class="form-group border-0">
+                                                        <label class="form-label">Guest
+                                                        </label>
+                                                        <div class="dropdown" id="myDD4">
+                                                            <button class="dropdown-toggle form-control" type="button"
+                                                                id="travellerInfoOneway" data-bs-toggle="dropdown"
+                                                                aria-expanded="false">
+                                                                <span class="text-truncate">2 adults - 1 childeren - 1
+                                                                    room
+                                                                </span>
+                                                            </button>
+                                                            <div class="dropdown-menu"
+                                                                aria-labelledby="travellerInfoOneway">
+                                                                <ul class="drop-rest">
+                                                                    <li>
+                                                                        <div class="d-flex small">Adults
+                                                                        </div>
+                                                                        <div
+                                                                            class="ms-auto input-group plus-minus-input">
+                                                                            <div class="input-group-button">
+                                                                                <button type="button" class="circle"
+                                                                                    data-quantity="minus"
+                                                                                    data-field="onewayAdult">
+                                                                                    <i class="bi bi-dash"></i>
+                                                                                </button>
+                                                                            </div>
+                                                                            <input class="input-group-field"
+                                                                                type="number" name="onewayAdult"
+                                                                                value="0">
+                                                                            <div class="input-group-button">
+                                                                                <button type="button" class="circle"
+                                                                                    data-quantity="plus"
+                                                                                    data-field="onewayAdult">
+                                                                                    <i class="bi bi-plus"></i>
+                                                                                </button>
+                                                                            </div>
+                                                                        </div>
+                                                                    </li>
+                                                                    <li>
+                                                                        <div class="d-flex small">Child
+                                                                        </div>
+                                                                        <div
+                                                                            class="ms-auto input-group plus-minus-input">
+                                                                            <div class="input-group-button">
+                                                                                <button type="button" class="circle"
+                                                                                    data-quantity="minus"
+                                                                                    data-field="onewayChild">
+                                                                                    <i class="bi bi-dash"></i>
+                                                                                </button>
+                                                                            </div>
+                                                                            <input class="input-group-field"
+                                                                                type="number" name="onewayChild"
+                                                                                value="0">
+                                                                            <div class="input-group-button">
+                                                                                <button type="button" class="circle"
+                                                                                    data-quantity="plus"
+                                                                                    data-field="onewayChild">
+                                                                                    <i class="bi bi-plus"></i>
+                                                                                </button>
+                                                                            </div>
+                                                                        </div>
+                                                                    </li>
+                                                                    <li>
+                                                                        <div class="d-flex small">Rooms
+                                                                        </div>
+                                                                        <div
+                                                                            class="ms-auto input-group plus-minus-input">
+                                                                            <div class="input-group-button">
+                                                                                <button type="button" class="circle"
+                                                                                    data-quantity="minus"
+                                                                                    data-field="onewayInfant">
+                                                                                    <i class="bi bi-dash"></i>
+                                                                                </button>
+                                                                            </div>
+                                                                            <input class="input-group-field"
+                                                                                type="number" name="onewayInfant"
+                                                                                value="0">
+                                                                            <div class="input-group-button">
+                                                                                <button type="button" class="circle"
+                                                                                    data-quantity="plus"
+                                                                                    data-field="onewayInfant">
+                                                                                    <i class="bi bi-plus"></i>
+                                                                                </button>
+                                                                            </div>
+                                                                        </div>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 col-lg-6 col-xl-2 px-0">
+                                                    <button type="submit" class="btn btn-search"
+                                                        onclick="window.location.href='flight-listing-oneway.html';">
+                                                        <span class="fw-bold"><i class="bi bi-search me-2"></i>
+                                                            {{"main-search" | translate}}</span>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="tab-pane fade" id="holiday-tab-pane" role="tabpanel"
+                                    aria-labelledby="holiday-tab" tabindex="0">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <div class="search-pan row mx-0 theme-border-radius">
+                                                <div class="col-12 col-lg-4 col-xl-2 ps-0 mb-2 mb-xl-0 pe-0 pe-lg-2">
+                                                    <div class="form-group">
+                                                        <label for="exampleDataList9" class="form-label">Country
+                                                            <i class="bi bi-caret-down-fill small"></i>
+                                                        </label>
+                                                        <input class="form-control" list="datalistOptions6"
+                                                            id="exampleDataList9" placeholder="India">
+                                                        <datalist id="datalistOptions6">
+                                                            <option value="San Francisco">
+                                                            <option value="New York">
+                                                            <option value="Seattle">
+                                                            <option value="Los Angeles">
+                                                            <option value="Chicago">
+                                                        </datalist>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 col-lg-4 col-xl-2 ps-0 mb-2 mb-xl-0 pe-0 pe-lg-2">
+                                                    <div class="form-group">
+                                                        <label for="exampleDataList10" class="form-label">Location
+                                                            <i class="bi bi-caret-down-fill small"></i>
+                                                        </label>
+                                                        <input class="form-control" list="datalistOptions8"
+                                                            id="exampleDataList10" placeholder="New Delhi">
+                                                        <datalist id="datalistOptions8">
+                                                            <option value="San Francisco">
+                                                            <option value="New York">
+                                                            <option value="Seattle">
+                                                            <option value="Los Angeles">
+                                                            <option value="Chicago">
+                                                        </datalist>
+                                                    </div>
+                                                </div>
+                                                <div
+                                                    class="col-12 col-lg-4 col-xl-3 ps-0 mb-2 mb-xl-0 pe-0 pe-lg-0 pe-xl-2">
+                                                    <div class="form-group">
+                                                        <label class="form-label">Check in Date - Check out Date</label>
+                                                        <input type="text" class="form-control"
+                                                            placeholder="Wed 2 Mar  -  Fri 11 Apr">
+                                                    </div>
+                                                </div>
+                                                <div
+                                                    class="col-12 col-lg-6 col-xl-3 ps-0 mb-2 mb-lg-0 mb-xl-0 pe-0 pe-lg-2">
+                                                    <div class="form-group border-0">
+                                                        <label class="form-label">Guest
+                                                        </label>
+                                                        <div class="dropdown" id="myDD5">
+                                                            <button class="dropdown-toggle form-control" type="button"
+                                                                id="travellerInfoOneway31" data-bs-toggle="dropdown"
+                                                                aria-expanded="false">
+                                                                <span class="text-truncate">2 adults - 1 childeren - 1
+                                                                    room
+                                                                </span>
+                                                            </button>
+                                                            <div class="dropdown-menu"
+                                                                aria-labelledby="travellerInfoOneway31">
+                                                                <ul class="drop-rest">
+                                                                    <li>
+                                                                        <div class="d-flex small">Adults
+                                                                        </div>
+                                                                        <div
+                                                                            class="ms-auto input-group plus-minus-input">
+                                                                            <div class="input-group-button">
+                                                                                <button type="button" class="circle"
+                                                                                    data-quantity="minus"
+                                                                                    data-field="onewayAdult">
+                                                                                    <i class="bi bi-dash"></i>
+                                                                                </button>
+                                                                            </div>
+                                                                            <input class="input-group-field"
+                                                                                type="number" name="onewayAdult"
+                                                                                value="0">
+                                                                            <div class="input-group-button">
+                                                                                <button type="button" class="circle"
+                                                                                    data-quantity="plus"
+                                                                                    data-field="onewayAdult">
+                                                                                    <i class="bi bi-plus"></i>
+                                                                                </button>
+                                                                            </div>
+                                                                        </div>
+                                                                    </li>
+                                                                    <li>
+                                                                        <div class="d-flex small">Child
+                                                                        </div>
+                                                                        <div
+                                                                            class="ms-auto input-group plus-minus-input">
+                                                                            <div class="input-group-button">
+                                                                                <button type="button" class="circle"
+                                                                                    data-quantity="minus"
+                                                                                    data-field="onewayChild">
+                                                                                    <i class="bi bi-dash"></i>
+                                                                                </button>
+                                                                            </div>
+                                                                            <input class="input-group-field"
+                                                                                type="number" name="onewayChild"
+                                                                                value="0">
+                                                                            <div class="input-group-button">
+                                                                                <button type="button" class="circle"
+                                                                                    data-quantity="plus"
+                                                                                    data-field="onewayChild">
+                                                                                    <i class="bi bi-plus"></i>
+                                                                                </button>
+                                                                            </div>
+                                                                        </div>
+                                                                    </li>
+                                                                    <li>
+                                                                        <div class="d-flex small">Rooms
+                                                                        </div>
+                                                                        <div
+                                                                            class="ms-auto input-group plus-minus-input">
+                                                                            <div class="input-group-button">
+                                                                                <button type="button" class="circle"
+                                                                                    data-quantity="minus"
+                                                                                    data-field="onewayInfant">
+                                                                                    <i class="bi bi-dash"></i>
+                                                                                </button>
+                                                                            </div>
+                                                                            <input class="input-group-field"
+                                                                                type="number" name="onewayInfant"
+                                                                                value="0">
+                                                                            <div class="input-group-button">
+                                                                                <button type="button" class="circle"
+                                                                                    data-quantity="plus"
+                                                                                    data-field="onewayInfant">
+                                                                                    <i class="bi bi-plus"></i>
+                                                                                </button>
+                                                                            </div>
+                                                                        </div>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 col-lg-6 col-xl-2 px-0">
+                                                    <button type="submit" class="btn btn-search"
+                                                        onclick="window.location.href='flight-listing-oneway.html';">
+                                                        <span class="fw-bold"><i class="bi bi-search me-2"></i>
+                                                            {{"main-search" | translate}}
+                                                        </span>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="recommended" id="deals">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-6">
+                    <h4 class="fs-2 fw-bold theme-text-secondary mb-0">{{"main-Recommended" | translate}}</h4>
+                    <p class="mb-0 theme-text-accent-one">{{"main-recommended-tegi" | translate}}</p>
+                </div>
+                <div class="col-12 col-lg-6 align-self-center justify-content-end d-flex">
+                    <div class="d-flex">
+
+                    </div>
+                </div>
+            </div>
+            <!-- recomended tours card -->
+            <div class="row mt-5">
+                <div class="col-12 col-md-6 col-lg-3 mb-4 mb-lg-0">
+                    <div class="card-wrap">
+                        <div class="con-img-wrap m-auto">
+                            <img src="../../../assets/images/recommended/offers01.png" class="img-fluid mx-auto d-block"
+                                alt="product picture">
+                            <div class="offer-tag bg-warning">{{"main-bestDeal" | translate}}</div>
+                            <span class="wishlist-tag"><i class="bi bi-heart"></i></span>
+                        </div>
+                        <div class="con-wrap mt-4">
+                            <h2 class="fs-6 mt-4 fw-bold text-truncate">{{"main-image1" | translate}}</h2>
+                            <p class="mb-2 theme-text-accent-two small">{{"main-image1-tegi" | translate}}</p>
+                            <div class="d-flex bottom mb-2">
+                                <div class="rating-cover">
+                                    <span class="p-1 small rounded-1 bg-warning theme-text-white">4.8</span>
+                                    <span class="me-2 small theme-text-accent-one">
+                                        {{"main-Exceptional" |translate}}</span>
+                                    <span class="small">3,014 {{"main-reviews" | translate}}</span>
+                                </div>
+                            </div>
+                            <p class="mb-0 theme-text-accent-one">{{"main-startingFrom" | translate}} US$72</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- repetable -->
+                <div class="col-12 col-md-6 col-lg-3 mb-4 mb-lg-0">
+                    <div class="card-wrap">
+                        <div class="con-img-wrap m-auto">
+                            <img src="../../../assets/images/recommended/offers02.png" class="img-fluid mx-auto d-block"
+                                alt="product picture">
+                            <div class="offer-tag  bg-info">{{"main-bestDeal" | translate}}</div>
+                            <span class="wishlist-tag"><i class="bi bi-heart"></i></span>
+                        </div>
+                        <div class="con-wrap mt-4">
+                            <h2 class="fs-6 mt-4 fw-bold text-truncate">{{"main-image2" | translate}}</h2>
+                            <p class="mb-2 theme-text-accent-two small">{{"main-image2-tegi" | translate}}</p>
+                            <div class="d-flex bottom mb-2">
+                                <div class="rating-cover">
+                                    <span class="p-1 small rounded-1 bg-danger theme-text-white">4.7</span>
+                                    <span class="me-2 small theme-text-accent-one">
+                                        {{"main-Exceptional" |translate}}</span>
+                                    <span class="small">4,114 {{"main-reviews" | translate}}</span>
+                                </div>
+                            </div>
+                            <p class="mb-0 theme-text-accent-one">{{"main-startingFrom" | translate}} US$89</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- repetable -->
+                <div class="col-12 col-md-6 col-lg-3 mb-4 mb-lg-0">
+                    <div class="card-wrap">
+                        <div class="con-img-wrap m-auto">
+                            <img src="/../../../assets/images/recommended/offers03.png"
+                                class="img-fluid mx-auto d-block" alt="product picture">
+                            <div class="offer-tag bg-success">{{"main-bestDeal" | translate}}</div>
+                            <span class="wishlist-tag"><i class="bi bi-heart"></i></span>
+                        </div>
+                        <div class="con-wrap mt-4">
+                            <h2 class="fs-6 mt-4 fw-bold text-truncate">{{"main-image3" | translate}}</h2>
+                            <p class="mb-2 theme-text-accent-two small">{{"main-image3-tegi" | translate}}</p>
+                            <div class="d-flex bottom mb-2">
+                                <div class="rating-cover">
+                                    <span class="p-1 small rounded-1 bg-success theme-text-white">4.9</span>
+                                    <span class="me-2 small theme-text-accent-one">{{"main-Exceptional" |
+                                        translate}}</span>
+                                    <span class="small">3,894 {{"main-reviews" | translate}}</span>
+                                </div>
+                            </div>
+                            <p class="mb-0 theme-text-accent-one">{{"main-startingFrom" | translate}} US$88</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- repetable -->
+                <div class="col-12 col-md-6 col-lg-3 mb-4 mb-lg-0">
+                    <div class="card-wrap">
+                        <div class="con-img-wrap m-auto">
+                            <img src="../../../assets/images/recommended/offers04.png" class="img-fluid mx-auto d-block"
+                                alt="product picture">
+                            <div class="offer-tag">{{"main-bestDeal" | translate}}</div>
+                            <span class="wishlist-tag"><i class="bi bi-heart"></i></span>
+                        </div>
+                        <div class="con-wrap mt-4">
+                            <h2 class="fs-6 mt-4 fw-bold text-truncate">{{"main-image4" | translate}}</h2>
+                            <p class="mb-2 theme-text-accent-two small">{{"main-image4-tegi" | translate}}</p>
+                            <div class="d-flex bottom mb-2">
+                                <div class="rating-cover">
+                                    <span class="p-1 small rounded-1 bg-info theme-text-white">4.5</span>
+                                    <span class="me-2 small theme-text-accent-one">
+                                        {{"main-Exceptional" |translate}}</span>
+                                    <span class="small">2,914 {{"main-reviews" | translate}}</span>
+                                </div>
+                            </div>
+                            <p class="mb-0 theme-text-accent-one">{{"main-startingFrom" | translate}} US$69</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- repetable -->
+            </div>
+        </div>
+    </section>
+    <!-- testimonials section -->
+    <section class="experience">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="wrap">
+                        <div class="row">
+                            <div class="col-12 position-relative align-self-center">
+                                <h4 class="display-4 theme-text-white mb-0 fw-bold text-center">
+                                    {{"main-video" | translate}}<br>
+                                </h4>
+                                <div class="group custom-button">
+                                    <div class="d-flex align-items-center">
+                                        <a href="https://www.youtube.com/watch?v=r44RKWyfcFw&amp;fbclid=IwAR21beSJORalzmzokxDRcGfkZA1AtRTE__l5N4r09HcGS5Y6vOluyouM9EM"
+                                            class="video-icon video-icon2 mr-30 ml-20 video_model glightbox">
+                                            <i class="bi bi-play"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-12 col-sm-6 col-lg-3 mb-3 mb-lg-0">
+                    <div class="d-flex align-items-center p-4 p-md-0">
+                        <i class="bi bi-airplane fs-4 theme-text-primary"></i>
+                        <h3 class="fs-2 mb-0 mx-3">{{companyList[0].experiance}}</h3>
+                        <p class="fs-4 mb-0 theme-text-accent-one">{{"main-experience" | translate}}</p>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-3 mb-3 mb-lg-0">
+                    <div class="d-flex align-items-center p-4 p-md-0">
+                        <i class="bi bi-hospital fs-4 theme-text-primary"></i>
+                        <h3 class="fs-2 mb-0 mx-3">{{companyList[0].tourPackages}}</h3>
+                        <p class="fs-4 mb-0 theme-text-accent-one">{{"main-tour-packages" | translate}}</p>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-3 mb-3 mb-lg-0">
+                    <div class="d-flex align-items-center p-4 p-md-0">
+                        <i class="bi bi-award fs-4 theme-text-primary"></i>
+                        <h3 class="fs-2 mb-0 mx-3">{{companyList[0].happyCustomers}}</h3>
+                        <p class="fs-4 mb-0 theme-text-accent-one">{{"main-happy-customers" | translate}}</p>
+                    </div>
+                </div>
+                <!-- <div class="col-12 col-sm-6 col-lg-3 mb-3 mb-lg-0">
+                    <div class="d-flex align-items-center p-4 p-md-0">
+                        <i class="bi bi-star fs-4 theme-text-primary"></i>
+                        <h3 class="fs-2 mb-0 mx-3">9999</h3>
+                        <p class="fs-4 mb-0 theme-text-accent-one">Ratings</p>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </section>
+    <!-- special offers section -->
+    <section class="destinations" id="holidays">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 mb-5">
+                    <h4 class="fs-2 fw-bold theme-text-secondary mb-0">{{"main-most-lovely" | translate}}</h4>
+                    <p class="mb-0 theme-text-accent-one">{{"main-most-lovely-tegi" | translate}}</p>
+                </div>
+                <!-- destination tab -->
+                <div class="col-12">
+                    <ul class="nav nav-pills mb-3 destination-pill" id="pills-tab2" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="pills-regions-tab" data-bs-toggle="pill"
+                                data-bs-target="#pills-regions" type="button" role="tab" aria-controls="pills-regions"
+                                aria-selected="true">{{"main-regions" | translate}}</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="pills-cities-tab" data-bs-toggle="pill"
+                                data-bs-target="#pills-cities" type="button" role="tab" aria-controls="pills-cities"
+                                aria-selected="false">{{"main-Cities" | translate}}</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill"
+                                data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact"
+                                aria-selected="false">{{"main-PlacesOfInterest" | translate}}</button>
+                        </li>
+                    </ul>
+                    <!-- destination content -->
+                    <div class="tab-content mt-5" id="pills-tab2Content">
+                        <div class="tab-pane fade show active" id="pills-regions" role="tabpanel"
+                            aria-labelledby="pills-regions-tab" tabindex="0">
+                            <div class="row">
+                                <div class="col-12 col-lg-3">
+                                    <div class="theme-bg-white mb-5">
+                                        <div class="row g-0 align-items-center">
+                                            <div class="col-4 col-xxl-2 overflow-hidden rounded-circle">
+                                                <div class="overflow-hidden">
+                                                    <figure class="mb-0 img-effect">
+                                                        <img src="../../../assets/images/destinations/destination01.jpg"
+                                                            class="img-fluid" alt="flight-destination-one"
+                                                            title="flight-destination-one">
+                                                    </figure>
+                                                </div>
+                                            </div>
+                                            <div class="col-8 col-xxl-10">
+                                                <div
+                                                    class="mt-2 mt-xxl-0 ps-3 d-flex justify-content-between align-items-center">
+                                                    <div class="d-flex flex-column">
+                                                        <span class="d-flex fs-6">{{"main-Hawai" | translate}}</span>
+                                                        <span class="d-flex small fw-normal theme-text-accent-one">1,528
+                                                            {{"main-hotels" | translate}}</span>
+                                                    </div>
+                                                    <div class="d-flex">
+                                                        <a routerLink="/tours" class="link-btn"><span><i
+                                                                    class="bi bi-arrow-up-right"></i></span></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- repetable -->
+                                <div class="col-12 col-lg-3">
+                                    <div class="theme-bg-white mb-5">
+                                        <div class="row g-0 align-items-center">
+                                            <div class="col-4 col-xxl-2 overflow-hidden rounded-circle">
+                                                <div class="overflow-hidden">
+                                                    <figure class="mb-0 img-effect">
+                                                        <img src="../../../assets/images/destinations/destination02.jpg"
+                                                            class="img-fluid" alt="flight-destination-one"
+                                                            title="flight-destination-one">
+                                                    </figure>
+                                                </div>
+                                            </div>
+                                            <div class="col-8 col-xxl-10">
+                                                <div
+                                                    class="mt-2 mt-xxl-0 ps-3 d-flex justify-content-between align-items-center">
+                                                    <div class="d-flex flex-column">
+                                                        <span class="d-flex fs-6">{{"main-main-Turkey" |
+                                                            translate}}</span>
+                                                        <span class="d-flex small fw-normal theme-text-accent-one">2,568
+                                                            {{"main-hotels" | translate}}</span>
+                                                    </div>
+                                                    <div class="d-flex">
+                                                        <a routerLink="/tours" class="link-btn"><span><i
+                                                                    class="bi bi-arrow-up-right"></i></span></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- repetable -->
+                                <div class="col-12 col-lg-3">
+                                    <div class="theme-bg-white mb-5">
+                                        <div class="row g-0 align-items-center">
+                                            <div class="col-4 col-xxl-2 overflow-hidden rounded-circle">
+                                                <div class="overflow-hidden">
+                                                    <figure class="mb-0 img-effect">
+                                                        <img src="../../../assets/images/destinations/destination03.jpg"
+                                                            class="img-fluid" alt="flight-destination-one"
+                                                            title="flight-destination-one">
+                                                    </figure>
+                                                </div>
+                                            </div>
+                                            <div class="col-8 col-xxl-10">
+                                                <div
+                                                    class="mt-2 mt-xxl-0 ps-3 d-flex justify-content-between align-items-center">
+                                                    <div class="d-flex flex-column">
+                                                        <span class="d-flex fs-6">{{"main-Iceland" | translate}}</span>
+                                                        <span class="d-flex small fw-normal theme-text-accent-one">4,963
+                                                            {{"main-hotels" | translate}}</span>
+                                                    </div>
+                                                    <div class="d-flex">
+                                                        <a routerLink="/tours" class="link-btn"><span><i
+                                                                    class="bi bi-arrow-up-right"></i></span></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- repetable -->
+                                <div class="col-12 col-lg-3">
+                                    <div class="theme-bg-white mb-5">
+                                        <div class="row g-0 align-items-center">
+                                            <div class="col-4 col-xxl-2 overflow-hidden rounded-circle">
+                                                <div class="overflow-hidden">
+                                                    <figure class="mb-0 img-effect">
+                                                        <img src="../../../assets/images/destinations/destination04.jpg"
+                                                            class="img-fluid" alt="flight-destination-one"
+                                                            title="flight-destination-one">
+                                                    </figure>
+                                                </div>
+                                            </div>
+                                            <div class="col-8 col-xxl-10">
+                                                <div
+                                                    class="mt-2 mt-xxl-0 ps-3 d-flex justify-content-between align-items-center">
+                                                    <div class="d-flex flex-column">
+                                                        <span class="d-flex fs-6">{{"main-Maldives" | translate}}</span>
+                                                        <span class="d-flex small fw-normal theme-text-accent-one">1,523
+                                                            {{"main-hotels" | translate}}</span>
+                                                    </div>
+                                                    <div class="d-flex">
+                                                        <a routerLink="/tours" class="link-btn"><span><i
+                                                                    class="bi bi-arrow-up-right"></i></span></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- repetable -->
+                                <div class="col-12 col-lg-3">
+                                    <div class="theme-bg-white mb-5">
+                                        <div class="row g-0 align-items-center">
+                                            <div class="col-4 col-xxl-2 overflow-hidden rounded-circle">
+                                                <div class="overflow-hidden">
+                                                    <figure class="mb-0 img-effect">
+                                                        <img src="assets/../../../assets/images/destinations/destination05.jpg"
+                                                            class="img-fluid" alt="flight-destination-one"
+                                                            title="flight-destination-one">
+                                                    </figure>
+                                                </div>
+                                            </div>
+                                            <div class="col-8 col-xxl-10">
+                                                <div
+                                                    class="mt-2 mt-xxl-0 ps-3 d-flex justify-content-between align-items-center">
+                                                    <div class="d-flex flex-column">
+                                                        <span class="d-flex fs-6">{{"main-Australia" |
+                                                            translate}}</span>
+                                                        <span class="d-flex small fw-normal theme-text-accent-one">526
+                                                            {{"main-hotels" | translate}}</span>
+                                                    </div>
+                                                    <div class="d-flex">
+                                                        <a routerLink="/tours" class="link-btn"><span><i
+                                                                    class="bi bi-arrow-up-right"></i></span></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- repetable -->
+                                <div class="col-12 col-lg-3">
+                                    <div class="theme-bg-white mb-5">
+                                        <div class="row g-0 align-items-center">
+                                            <div class="col-4 col-xxl-2 overflow-hidden rounded-circle">
+                                                <div class="overflow-hidden">
+                                                    <figure class="mb-0 img-effect">
+                                                        <img src="assets/../../../assets/images/destinations/destination06.jpg"
+                                                            class="img-fluid" alt="flight-destination-one"
+                                                            title="flight-destination-one">
+                                                    </figure>
+                                                </div>
+                                            </div>
+                                            <div class="col-8 col-xxl-10">
+                                                <div
+                                                    class="mt-2 mt-xxl-0 ps-3 d-flex justify-content-between align-items-center">
+                                                    <div class="d-flex flex-column">
+                                                        <span class="d-flex fs-6">{{"main-Rome" | translate}}</span>
+                                                        <span class="d-flex small fw-normal theme-text-accent-one">5,963
+                                                            {{"main-hotels" | translate}}</span>
+                                                    </div>
+                                                    <div class="d-flex">
+                                                        <a routerLink="/tours" class="link-btn"><span><i
+                                                                    class="bi bi-arrow-up-right"></i></span></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- repetable -->
+                                <div class="col-12 col-lg-3">
+                                    <div class="theme-bg-white mb-5">
+                                        <div class="row g-0 align-items-center">
+                                            <div class="col-4 col-xxl-2 overflow-hidden rounded-circle">
+                                                <div class="overflow-hidden">
+                                                    <figure class="mb-0 img-effect">
+                                                        <img src="assets/../../../assets/images/destinations/destination07.jpg"
+                                                            class="img-fluid" alt="flight-destination-one"
+                                                            title="flight-destination-one">
+                                                    </figure>
+                                                </div>
+                                            </div>
+                                            <div class="col-8 col-xxl-10">
+                                                <div
+                                                    class="mt-2 mt-xxl-0 ps-3 d-flex justify-content-between align-items-center">
+                                                    <div class="d-flex flex-column">
+                                                        <span class="d-flex fs-6">{{"main-England" | translate}}</span>
+                                                        <span class="d-flex small fw-normal theme-text-accent-one">5,368
+                                                            {{"main-hotels" | translate}}</span>
+                                                    </div>
+                                                    <div class="d-flex">
+                                                        <a routerLink="/tours" class="link-btn"><span><i
+                                                                    class="bi bi-arrow-up-right"></i></span></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- repetable -->
+                                <div class="col-12 col-lg-3">
+                                    <div class="theme-bg-white mb-5">
+                                        <div class="row g-0 align-items-center">
+                                            <div class="col-4 col-xxl-2 overflow-hidden rounded-circle">
+                                                <div class="overflow-hidden">
+                                                    <figure class="mb-0 img-effect">
+                                                        <img src="assets/../../../assets/images/destinations/destination08.jpg"
+                                                            class="img-fluid" alt="flight-destination-one"
+                                                            title="flight-destination-one">
+                                                    </figure>
+                                                </div>
+                                            </div>
+                                            <div class="col-8 col-xxl-10">
+                                                <div
+                                                    class="mt-2 mt-xxl-0 ps-3 d-flex justify-content-between align-items-center">
+                                                    <div class="d-flex flex-column">
+                                                        <span class="d-flex fs-6">{{"main-London" | translate}}</span>
+                                                        <span class="d-flex small fw-normal theme-text-accent-one">1,963
+                                                            {{"main-hotels" | translate}}</span>
+                                                    </div>
+                                                    <div class="d-flex">
+                                                        <a routerLink="/tours" class="link-btn"><span><i
+                                                                    class="bi bi-arrow-up-right"></i></span></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- repetable -->
+                                <div class="col-12 col-lg-3">
+                                    <div class="theme-bg-white mb-5">
+                                        <div class="row g-0 align-items-center">
+                                            <div class="col-4 col-xxl-2 overflow-hidden rounded-circle">
+                                                <div class="overflow-hidden">
+                                                    <figure class="mb-0 img-effect">
+                                                        <img src="assets/../../../assets/images/destinations/destination09.jpg"
+                                                            class="img-fluid" alt="flight-destination-one"
+                                                            title="flight-destination-one">
+                                                    </figure>
+                                                </div>
+                                            </div>
+                                            <div class="col-8 col-xxl-10">
+                                                <div
+                                                    class="mt-2 mt-xxl-0 ps-3 d-flex justify-content-between align-items-center">
+                                                    <div class="d-flex flex-column">
+                                                        <span class="d-flex fs-6">{{"main-Zealand" | translate}}</span>
+                                                        <span class="d-flex small fw-normal theme-text-accent-one">1,523
+                                                            {{"main-hotels" | translate}}</span>
+                                                    </div>
+                                                    <div class="d-flex">
+                                                        <a routerLink="/tours" class="link-btn"><span><i
+                                                                    class="bi bi-arrow-up-right"></i></span></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- repetable -->
+                                <div class="col-12 col-lg-3">
+                                    <div class="theme-bg-white mb-5">
+                                        <div class="row g-0 align-items-center">
+                                            <div class="col-4 col-xxl-2 overflow-hidden rounded-circle">
+                                                <div class="overflow-hidden">
+                                                    <figure class="mb-0 img-effect">
+                                                        <img src="assets/../../../assets/images/destinations/destination10.jpg"
+                                                            class="img-fluid" alt="flight-destination-one"
+                                                            title="flight-destination-one">
+                                                    </figure>
+                                                </div>
+                                            </div>
+                                            <div class="col-8 col-xxl-10">
+                                                <div
+                                                    class="mt-2 mt-xxl-0 ps-3 d-flex justify-content-between align-items-center">
+                                                    <div class="d-flex flex-column">
+                                                        <span class="d-flex fs-6">{{"main-Peru" | translate}}</span>
+                                                        <span class="d-flex small fw-normal theme-text-accent-one">985
+                                                            {{"main-hotels" | translate}}</span>
+                                                    </div>
+                                                    <div class="d-flex">
+                                                        <a routerLink="/tours" class="link-btn"><span><i
+                                                                    class="bi bi-arrow-up-right"></i></span></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- repetable -->
+                                <div class="col-12 col-lg-3">
+                                    <div class="theme-bg-white mb-5">
+                                        <div class="row g-0 align-items-center">
+                                            <div class="col-4 col-xxl-2 overflow-hidden rounded-circle">
+                                                <div class="overflow-hidden">
+                                                    <figure class="mb-0 img-effect">
+                                                        <img src="assets/../../../assets/images/destinations/destination11.jpg"
+                                                            class="img-fluid" alt="flight-destination-one"
+                                                            title="flight-destination-one">
+                                                    </figure>
+                                                </div>
+                                            </div>
+                                            <div class="col-8 col-xxl-10">
+                                                <div
+                                                    class="mt-2 mt-xxl-0 ps-3 d-flex justify-content-between align-items-center">
+                                                    <div class="d-flex flex-column">
+                                                        <span class="d-flex fs-6">{{"main-France" | translate}}</span>
+                                                        <span class="d-flex small fw-normal theme-text-accent-one">5,369
+                                                            {{"main-hotels" | translate}}</span>
+                                                    </div>
+                                                    <div class="d-flex">
+                                                        <a routerLink="/tours" class="link-btn"><span><i
+                                                                    class="bi bi-arrow-up-right"></i></span></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- repetable -->
+                                <div class="col-12 col-lg-3">
+                                    <div class="theme-bg-white mb-5">
+                                        <div class="row g-0 align-items-center">
+                                            <div class="col-4 col-xxl-2 overflow-hidden rounded-circle">
+                                                <div class="overflow-hidden">
+                                                    <figure class="mb-0 img-effect">
+                                                        <img src="assets/../../../assets/images/destinations/destination12.jpg"
+                                                            class="img-fluid" alt="flight-destination-one"
+                                                            title="flight-destination-one">
+                                                    </figure>
+                                                </div>
+                                            </div>
+                                            <div class="col-8 col-xxl-10">
+                                                <div
+                                                    class="mt-2 mt-xxl-0 ps-3 d-flex justify-content-between align-items-center">
+                                                    <div class="d-flex flex-column">
+                                                        <span class="d-flex fs-6">{{"main-Paris" | translate}}</span>
+                                                        <span class="d-flex small fw-normal theme-text-accent-one">7,652
+                                                            {{"main-hotels" | translate}}</span>
+                                                    </div>
+                                                    <div class="d-flex">
+                                                        <a routerLink="/tours" class="link-btn"><span><i
+                                                                    class="bi bi-arrow-up-right"></i></span></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- repetable -->
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="pills-cities" role="tabpanel" aria-labelledby="pills-cities-tab"
+                            tabindex="0">
+                            <div class="row">
+                                <div class="col-12 col-lg-3">
+                                    <div class="theme-bg-white mb-5">
+                                        <div class="row g-0 align-items-center">
+                                            <div class="col-4 col-xxl-2 overflow-hidden rounded-circle">
+                                                <div class="overflow-hidden">
+                                                    <figure class="mb-0 img-effect">
+                                                        <img src="assets/../../../assets/images/destinations/destination01.jpg"
+                                                            class="img-fluid" alt="flight-destination-one"
+                                                            title="flight-destination-one">
+                                                    </figure>
+                                                </div>
+                                            </div>
+                                            <div class="col-8 col-xxl-10">
+                                                <div
+                                                    class="mt-2 mt-xxl-0 ps-3 d-flex justify-content-between align-items-center">
+                                                    <div class="d-flex flex-column">
+                                                        <span class="d-flex fs-6">{{"main-Hawai" | translate}}</span>
+                                                        <span class="d-flex small fw-normal theme-text-accent-one">2,215
+                                                            {{"main-hotels" | translate}}</span>
+                                                    </div>
+                                                    <div class="d-flex">
+                                                        <a routerLink="/tours" class="link-btn"><span><i
+                                                                    class="bi bi-arrow-up-right"></i></span></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- repetable -->
+                                <div class="col-12 col-lg-3">
+                                    <div class="theme-bg-white mb-5">
+                                        <div class="row g-0 align-items-center">
+                                            <div class="col-4 col-xxl-2 overflow-hidden rounded-circle">
+                                                <div class="overflow-hidden">
+                                                    <figure class="mb-0 img-effect">
+                                                        <img src="assets/../../../assets/images/destinations/destination02.jpg"
+                                                            class="img-fluid" alt="flight-destination-one"
+                                                            title="flight-destination-one">
+                                                    </figure>
+                                                </div>
+                                            </div>
+                                            <div class="col-8 col-xxl-10">
+                                                <div
+                                                    class="mt-2 mt-xxl-0 ps-3 d-flex justify-content-between align-items-center">
+                                                    <div class="d-flex flex-column">
+                                                        <span class="d-flex fs-6">{{"main-Turkey" | translate}}</span>
+                                                        <span class="d-flex small fw-normal theme-text-accent-one">256
+                                                            {{"main-hotels" | translate}}</span>
+                                                    </div>
+                                                    <div class="d-flex">
+                                                        <a routerLink="/tours" class="link-btn"><span><i
+                                                                    class="bi bi-arrow-up-right"></i></span></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- repetable -->
+                                <div class="col-12 col-lg-3">
+                                    <div class="theme-bg-white mb-5">
+                                        <div class="row g-0 align-items-center">
+                                            <div class="col-4 col-xxl-2 overflow-hidden rounded-circle">
+                                                <div class="overflow-hidden">
+                                                    <figure class="mb-0 img-effect">
+                                                        <img src="assets/../../../assets/images/destinations/destination03.jpg"
+                                                            class="img-fluid" alt="flight-destination-one"
+                                                            title="flight-destination-one">
+                                                    </figure>
+                                                </div>
+                                            </div>
+                                            <div class="col-8 col-xxl-10">
+                                                <div
+                                                    class="mt-2 mt-xxl-0 ps-3 d-flex justify-content-between align-items-center">
+                                                    <div class="d-flex flex-column">
+                                                        <span class="d-flex fs-6">{{"main-Iceland" | translate}}</span>
+                                                        <span class="d-flex small fw-normal theme-text-accent-one">9,214
+                                                            {{"main-hotels" | translate}}</span>
+                                                    </div>
+                                                    <div class="d-flex">
+                                                        <a routerLink="/tours" class="link-btn"><span><i
+                                                                    class="bi bi-arrow-up-right"></i></span></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- repetable -->
+                                <div class="col-12 col-lg-3">
+                                    <div class="theme-bg-white mb-5">
+                                        <div class="row g-0 align-items-center">
+                                            <div class="col-4 col-xxl-2 overflow-hidden rounded-circle">
+                                                <div class="overflow-hidden">
+                                                    <figure class="mb-0 img-effect">
+                                                        <img src="assets/../../../assets/images/destinations/destination04.jpg"
+                                                            class="img-fluid" alt="flight-destination-one"
+                                                            title="flight-destination-one">
+                                                    </figure>
+                                                </div>
+                                            </div>
+                                            <div class="col-8 col-xxl-10">
+                                                <div
+                                                    class="mt-2 mt-xxl-0 ps-3 d-flex justify-content-between align-items-center">
+                                                    <div class="d-flex flex-column">
+                                                        <span class="d-flex fs-6">{{"main-Maldives" | translate}}</span>
+                                                        <span class="d-flex small fw-normal theme-text-accent-one">1,254
+                                                            {{"main-hotels" | translate}}</span>
+                                                    </div>
+                                                    <div class="d-flex">
+                                                        <a routerLink="/tours" class="link-btn"><span><i
+                                                                    class="bi bi-arrow-up-right"></i></span></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- repetable -->
+                                <div class="col-12 col-lg-3">
+                                    <div class="theme-bg-white mb-5">
+                                        <div class="row g-0 align-items-center">
+                                            <div class="col-4 col-xxl-2 overflow-hidden rounded-circle">
+                                                <div class="overflow-hidden">
+                                                    <figure class="mb-0 img-effect">
+                                                        <img src="assets/../../../assets/images/destinations/destination05.jpg"
+                                                            class="img-fluid" alt="flight-destination-one"
+                                                            title="flight-destination-one">
+                                                    </figure>
+                                                </div>
+                                            </div>
+                                            <div class="col-8 col-xxl-10">
+                                                <div
+                                                    class="mt-2 mt-xxl-0 ps-3 d-flex justify-content-between align-items-center">
+                                                    <div class="d-flex flex-column">
+                                                        <span class="d-flex fs-6">{{"main-Australia" | translate}}
+                                                        </span>
+                                                        <span class="d-flex small fw-normal theme-text-accent-one">4.635
+                                                            {{"main-hotels" | translate}}</span>
+                                                    </div>
+                                                    <div class="d-flex">
+                                                        <a routerLink="/tours" class="link-btn"><span><i
+                                                                    class="bi bi-arrow-up-right"></i></span></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- repetable -->
+                                <div class="col-12 col-lg-3">
+                                    <div class="theme-bg-white mb-5">
+                                        <div class="row g-0 align-items-center">
+                                            <div class="col-4 col-xxl-2 overflow-hidden rounded-circle">
+                                                <div class="overflow-hidden">
+                                                    <figure class="mb-0 img-effect">
+                                                        <img src="assets/../../../assets/images/destinations/destination06.jpg"
+                                                            class="img-fluid" alt="flight-destination-one"
+                                                            title="flight-destination-one">
+                                                    </figure>
+                                                </div>
+                                            </div>
+                                            <div class="col-8 col-xxl-10">
+                                                <div
+                                                    class="mt-2 mt-xxl-0 ps-3 d-flex justify-content-between align-items-center">
+                                                    <div class="d-flex flex-column">
+                                                        <span class="d-flex fs-6">{{"main-Rome" | translate}}</span>
+                                                        <span class="d-flex small fw-normal theme-text-accent-one">5,232
+                                                            {{"main-hotels" | translate}}</span>
+                                                    </div>
+                                                    <div class="d-flex">
+                                                        <a routerLink="/tours" class="link-btn"><span><i
+                                                                    class="bi bi-arrow-up-right"></i></span></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- repetable -->
+                                <div class="col-12 col-lg-3">
+                                    <div class="theme-bg-white mb-5">
+                                        <div class="row g-0 align-items-center">
+                                            <div class="col-4 col-xxl-2 overflow-hidden rounded-circle">
+                                                <div class="overflow-hidden">
+                                                    <figure class="mb-0 img-effect">
+                                                        <img src="assets/../../../assets/images/destinations/destination07.jpg"
+                                                            class="img-fluid" alt="flight-destination-one"
+                                                            title="flight-destination-one">
+                                                    </figure>
+                                                </div>
+                                            </div>
+                                            <div class="col-8 col-xxl-10">
+                                                <div
+                                                    class="mt-2 mt-xxl-0 ps-3 d-flex justify-content-between align-items-center">
+                                                    <div class="d-flex flex-column">
+                                                        <span class="d-flex fs-6">{{"main-England" | translate}}</span>
+                                                        <span class="d-flex small fw-normal theme-text-accent-one">7,526
+                                                            {{"main-hotels" | translate}}</span>
+                                                    </div>
+                                                    <div class="d-flex">
+                                                        <a routerLink="/tours" class="link-btn"><span><i
+                                                                    class="bi bi-arrow-up-right"></i></span></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- repetable -->
+                                <div class="col-12 col-lg-3">
+                                    <div class="theme-bg-white mb-5">
+                                        <div class="row g-0 align-items-center">
+                                            <div class="col-4 col-xxl-2 overflow-hidden rounded-circle">
+                                                <div class="overflow-hidden">
+                                                    <figure class="mb-0 img-effect">
+                                                        <img src="assets/../../../assets/images/destinations/destination08.jpg"
+                                                            class="img-fluid" alt="flight-destination-one"
+                                                            title="flight-destination-one">
+                                                    </figure>
+                                                </div>
+                                            </div>
+                                            <div class="col-8 col-xxl-10">
+                                                <div
+                                                    class="mt-2 mt-xxl-0 ps-3 d-flex justify-content-between align-items-center">
+                                                    <div class="d-flex flex-column">
+                                                        <span class="d-flex fs-6">{{"main-London" | translate}}</span>
+                                                        <span class="d-flex small fw-normal theme-text-accent-one">2,654
+                                                            {{"main-hotels" | translate}}</span>
+                                                    </div>
+                                                    <div class="d-flex">
+                                                        <a routerLink="/tours" class="link-btn"><span><i
+                                                                    class="bi bi-arrow-up-right"></i></span></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- repetable -->
+                                <div class="col-12 col-lg-3">
+                                    <div class="theme-bg-white mb-5">
+                                        <div class="row g-0 align-items-center">
+                                            <div class="col-4 col-xxl-2 overflow-hidden rounded-circle">
+                                                <div class="overflow-hidden">
+                                                    <figure class="mb-0 img-effect">
+                                                        <img src="assets/../../../assets/images/destinations/destination09.jpg"
+                                                            class="img-fluid" alt="flight-destination-one"
+                                                            title="flight-destination-one">
+                                                    </figure>
+                                                </div>
+                                            </div>
+                                            <div class="col-8 col-xxl-10">
+                                                <div
+                                                    class="mt-2 mt-xxl-0 ps-3 d-flex justify-content-between align-items-center">
+                                                    <div class="d-flex flex-column">
+                                                        <span class="d-flex fs-6">{{"main-Zealand" | translate}}</span>
+                                                        <span class="d-flex small fw-normal theme-text-accent-one">2,659
+                                                            {{"main-hotels" | translate}}</span>
+                                                    </div>
+                                                    <div class="d-flex">
+                                                        <a routerLink="/tours" class="link-btn"><span><i
+                                                                    class="bi bi-arrow-up-right"></i></span></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- repetable -->
+                                <div class="col-12 col-lg-3">
+                                    <div class="theme-bg-white mb-5">
+                                        <div class="row g-0 align-items-center">
+                                            <div class="col-4 col-xxl-2 overflow-hidden rounded-circle">
+                                                <div class="overflow-hidden">
+                                                    <figure class="mb-0 img-effect">
+                                                        <img src="assets/../../../assets/images/destinations/destination10.jpg"
+                                                            class="img-fluid" alt="flight-destination-one"
+                                                            title="flight-destination-one">
+                                                    </figure>
+                                                </div>
+                                            </div>
+                                            <div class="col-8 col-xxl-10">
+                                                <div
+                                                    class="mt-2 mt-xxl-0 ps-3 d-flex justify-content-between align-items-center">
+                                                    <div class="d-flex flex-column">
+                                                        <span class="d-flex fs-6">{{"main-Peru" | translate}}</span>
+                                                        <span class="d-flex small fw-normal theme-text-accent-one">3,546
+                                                            {{"main-hotels" | translate}}</span>
+                                                    </div>
+                                                    <div class="d-flex">
+                                                        <a routerLink="/tours" class="link-btn"><span><i
+                                                                    class="bi bi-arrow-up-right"></i></span></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- repetable -->
+                                <div class="col-12 col-lg-3">
+                                    <div class="theme-bg-white mb-5">
+                                        <div class="row g-0 align-items-center">
+                                            <div class="col-4 col-xxl-2 overflow-hidden rounded-circle">
+                                                <div class="overflow-hidden">
+                                                    <figure class="mb-0 img-effect">
+                                                        <img src="assets/../../../assets/images/destinations/destination11.jpg"
+                                                            class="img-fluid" alt="flight-destination-one"
+                                                            title="flight-destination-one">
+                                                    </figure>
+                                                </div>
+                                            </div>
+                                            <div class="col-8 col-xxl-10">
+                                                <div
+                                                    class="mt-2 mt-xxl-0 ps-3 d-flex justify-content-between align-items-center">
+                                                    <div class="d-flex flex-column">
+                                                        <span class="d-flex fs-6">{{"main-France" | translate}}</span>
+                                                        <span class="d-flex small fw-normal theme-text-accent-one">2,325
+                                                            {{"main-hotels" | translate}}</span>
+                                                    </div>
+                                                    <div class="d-flex">
+                                                        <a routerLink="/tours" class="link-btn"><span><i
+                                                                    class="bi bi-arrow-up-right"></i></span></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- repetable -->
+                                <div class="col-12 col-lg-3">
+                                    <div class="theme-bg-white mb-5">
+                                        <div class="row g-0 align-items-center">
+                                            <div class="col-4 col-xxl-2 overflow-hidden rounded-circle">
+                                                <div class="overflow-hidden">
+                                                    <figure class="mb-0 img-effect">
+                                                        <img src="assets/../../../assets/images/destinations/destination12.jpg"
+                                                            class="img-fluid" alt="flight-destination-one"
+                                                            title="flight-destination-one">
+                                                    </figure>
+                                                </div>
+                                            </div>
+                                            <div class="col-8 col-xxl-10">
+                                                <div
+                                                    class="mt-2 mt-xxl-0 ps-3 d-flex justify-content-between align-items-center">
+                                                    <div class="d-flex flex-column">
+                                                        <span class="d-flex fs-6">{{"main-Paris" | translate}}</span>
+                                                        <span class="d-flex small fw-normal theme-text-accent-one">1,125
+                                                            {{"main-hotels" | translate}}</span>
+                                                    </div>
+                                                    <div class="d-flex">
+                                                        <a routerLink="/tours" class="link-btn"><span><i
+                                                                    class="bi bi-arrow-up-right"></i></span></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- repetable -->
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="pills-contact" role="tabpanel"
+                            aria-labelledby="pills-contact-tab" tabindex="0">
+                            <div class="row">
+                                <div class="col-12 col-lg-3">
+                                    <div class="theme-bg-white mb-5">
+                                        <div class="row g-0 align-items-center">
+                                            <div class="col-4 col-xxl-2 overflow-hidden rounded-circle">
+                                                <div class="overflow-hidden">
+                                                    <figure class="mb-0 img-effect">
+                                                        <img src="assets/../../../assets/images/destinations/destination01.jpg"
+                                                            class="img-fluid" alt="flight-destination-one"
+                                                            title="flight-destination-one">
+                                                    </figure>
+                                                </div>
+                                            </div>
+                                            <div class="col-8 col-xxl-10">
+                                                <div
+                                                    class="mt-2 mt-xxl-0 ps-3 d-flex justify-content-between align-items-center">
+                                                    <div class="d-flex flex-column">
+                                                        <span class="d-flex fs-6">{{"main-Hawai" | translate}}</span>
+                                                        <span class="d-flex small fw-normal theme-text-accent-one">3,546
+                                                            {{"main-hotels" | translate}}</span>
+                                                    </div>
+                                                    <div class="d-flex">
+                                                        <a routerLink="/tours" class="link-btn"><span><i
+                                                                    class="bi bi-arrow-up-right"></i></span></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- repetable -->
+                                <div class="col-12 col-lg-3">
+                                    <div class="theme-bg-white mb-5">
+                                        <div class="row g-0 align-items-center">
+                                            <div class="col-4 col-xxl-2 overflow-hidden rounded-circle">
+                                                <div class="overflow-hidden">
+                                                    <figure class="mb-0 img-effect">
+                                                        <img src="assets/../../../assets/images/destinations/destination02.jpg"
+                                                            class="img-fluid" alt="flight-destination-one"
+                                                            title="flight-destination-one">
+                                                    </figure>
+                                                </div>
+                                            </div>
+                                            <div class="col-8 col-xxl-10">
+                                                <div
+                                                    class="mt-2 mt-xxl-0 ps-3 d-flex justify-content-between align-items-center">
+                                                    <div class="d-flex flex-column">
+                                                        <span class="d-flex fs-6">{{"main-Turkey" | translate}}</span>
+                                                        <span class="d-flex small fw-normal theme-text-accent-one">2,365
+                                                            {{"main-hotels" | translate}}</span>
+                                                    </div>
+                                                    <div class="d-flex">
+                                                        <a routerLink="/tours" class="link-btn"><span><i
+                                                                    class="bi bi-arrow-up-right"></i></span></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- repetable -->
+                                <div class="col-12 col-lg-3">
+                                    <div class="theme-bg-white mb-5">
+                                        <div class="row g-0 align-items-center">
+                                            <div class="col-4 col-xxl-2 overflow-hidden rounded-circle">
+                                                <div class="overflow-hidden">
+                                                    <figure class="mb-0 img-effect">
+                                                        <img src="assets/../../../assets/images/destinations/destination03.jpg"
+                                                            class="img-fluid" alt="flight-destination-one"
+                                                            title="flight-destination-one">
+                                                    </figure>
+                                                </div>
+                                            </div>
+                                            <div class="col-8 col-xxl-10">
+                                                <div
+                                                    class="mt-2 mt-xxl-0 ps-3 d-flex justify-content-between align-items-center">
+                                                    <div class="d-flex flex-column">
+                                                        <span class="d-flex fs-6">{{"main-Iceland" | translate}}</span>
+                                                        <span class="d-flex small fw-normal theme-text-accent-one">9,325
+                                                            {{"main-hotels" | translate}}</span>
+                                                    </div>
+                                                    <div class="d-flex">
+                                                        <a routerLink="/tours" class="link-btn"><span><i
+                                                                    class="bi bi-arrow-up-right"></i></span></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- repetable -->
+                                <div class="col-12 col-lg-3">
+                                    <div class="theme-bg-white mb-5">
+                                        <div class="row g-0 align-items-center">
+                                            <div class="col-4 col-xxl-2 overflow-hidden rounded-circle">
+                                                <div class="overflow-hidden">
+                                                    <figure class="mb-0 img-effect">
+                                                        <img src="assets/../../../assets/images/destinations/destination04.jpg"
+                                                            class="img-fluid" alt="flight-destination-one"
+                                                            title="flight-destination-one">
+                                                    </figure>
+                                                </div>
+                                            </div>
+                                            <div class="col-8 col-xxl-10">
+                                                <div
+                                                    class="mt-2 mt-xxl-0 ps-3 d-flex justify-content-between align-items-center">
+                                                    <div class="d-flex flex-column">
+                                                        <span class="d-flex fs-6">{{"main-Maldives" | translate}}</span>
+                                                        <span class="d-flex small fw-normal theme-text-accent-one">1,325
+                                                            {{"main-hotels" | translate}}</span>
+                                                    </div>
+                                                    <div class="d-flex">
+                                                        <a routerLink="/tours" class="link-btn"><span><i
+                                                                    class="bi bi-arrow-up-right"></i></span></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- repetable -->
+                                <div class="col-12 col-lg-3">
+                                    <div class="theme-bg-white mb-5">
+                                        <div class="row g-0 align-items-center">
+                                            <div class="col-4 col-xxl-2 overflow-hidden rounded-circle">
+                                                <div class="overflow-hidden">
+                                                    <figure class="mb-0 img-effect">
+                                                        <img src="assets/../../../assets/images/destinations/destination05.jpg"
+                                                            class="img-fluid" alt="flight-destination-one"
+                                                            title="flight-destination-one">
+                                                    </figure>
+                                                </div>
+                                            </div>
+                                            <div class="col-8 col-xxl-10">
+                                                <div
+                                                    class="mt-2 mt-xxl-0 ps-3 d-flex justify-content-between align-items-center">
+                                                    <div class="d-flex flex-column">
+                                                        <span class="d-flex fs-6">{{"main-Australia" |
+                                                            translate}}</span>
+                                                        <span class="d-flex small fw-normal theme-text-accent-one">3,654
+                                                            {{"main-hotels" | translate}}</span>
+                                                    </div>
+                                                    <div class="d-flex">
+                                                        <a routerLink="/tours" class="link-btn"><span><i
+                                                                    class="bi bi-arrow-up-right"></i></span></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- repetable -->
+                                <div class="col-12 col-lg-3">
+                                    <div class="theme-bg-white mb-5">
+                                        <div class="row g-0 align-items-center">
+                                            <div class="col-4 col-xxl-2 overflow-hidden rounded-circle">
+                                                <div class="overflow-hidden">
+                                                    <figure class="mb-0 img-effect">
+                                                        <img src="assets/../../../assets/images/destinations/destination06.jpg"
+                                                            class="img-fluid" alt="flight-destination-one"
+                                                            title="flight-destination-one">
+                                                    </figure>
+                                                </div>
+                                            </div>
+                                            <div class="col-8 col-xxl-10">
+                                                <div
+                                                    class="mt-2 mt-xxl-0 ps-3 d-flex justify-content-between align-items-center">
+                                                    <div class="d-flex flex-column">
+                                                        <span class="d-flex fs-6">{{"main-Rome" | translate}}</span>
+                                                        <span class="d-flex small fw-normal theme-text-accent-one">956
+                                                            {{"main-hotels" | translate}}</span>
+                                                    </div>
+                                                    <div class="d-flex">
+                                                        <a routerLink="/tours" class="link-btn"><span><i
+                                                                    class="bi bi-arrow-up-right"></i></span></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- repetable -->
+                                <div class="col-12 col-lg-3">
+                                    <div class="theme-bg-white mb-5">
+                                        <div class="row g-0 align-items-center">
+                                            <div class="col-4 col-xxl-2 overflow-hidden rounded-circle">
+                                                <div class="overflow-hidden">
+                                                    <figure class="mb-0 img-effect">
+                                                        <img src="assets/../../../assets/images/destinations/destination07.jpg"
+                                                            class="img-fluid" alt="flight-destination-one"
+                                                            title="flight-destination-one">
+                                                    </figure>
+                                                </div>
+                                            </div>
+                                            <div class="col-8 col-xxl-10">
+                                                <div
+                                                    class="mt-2 mt-xxl-0 ps-3 d-flex justify-content-between align-items-center">
+                                                    <div class="d-flex flex-column">
+                                                        <span class="d-flex fs-6">{{"main-England" | translate}}</span>
+                                                        <span class="d-flex small fw-normal theme-text-accent-one">963
+                                                            {{"main-hotels" | translate}}</span>
+                                                    </div>
+                                                    <div class="d-flex">
+                                                        <a routerLink="/tours" class="link-btn"><span><i
+                                                                    class="bi bi-arrow-up-right"></i></span></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- repetable -->
+                                <div class="col-12 col-lg-3">
+                                    <div class="theme-bg-white mb-5">
+                                        <div class="row g-0 align-items-center">
+                                            <div class="col-4 col-xxl-2 overflow-hidden rounded-circle">
+                                                <div class="overflow-hidden">
+                                                    <figure class="mb-0 img-effect">
+                                                        <img src="assets/../../../assets/images/destinations/destination08.jpg"
+                                                            class="img-fluid" alt="flight-destination-one"
+                                                            title="flight-destination-one">
+                                                    </figure>
+                                                </div>
+                                            </div>
+                                            <div class="col-8 col-xxl-10">
+                                                <div
+                                                    class="mt-2 mt-xxl-0 ps-3 d-flex justify-content-between align-items-center">
+                                                    <div class="d-flex flex-column">
+                                                        <span class="d-flex fs-6">{{"main-London" | translate}}</span>
+                                                        <span class="d-flex small fw-normal theme-text-accent-one">3,256
+                                                            {{"main-hotels" | translate}}</span>
+                                                    </div>
+                                                    <div class="d-flex">
+                                                        <a routerLink="/tours" class="link-btn"><span><i
+                                                                    class="bi bi-arrow-up-right"></i></span></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- repetable -->
+                                <div class="col-12 col-lg-3">
+                                    <div class="theme-bg-white mb-5">
+                                        <div class="row g-0 align-items-center">
+                                            <div class="col-4 col-xxl-2 overflow-hidden rounded-circle">
+                                                <div class="overflow-hidden">
+                                                    <figure class="mb-0 img-effect">
+                                                        <img src="assets/../../../assets/images/destinations/destination09.jpg"
+                                                            class="img-fluid" alt="flight-destination-one"
+                                                            title="flight-destination-one">
+                                                    </figure>
+                                                </div>
+                                            </div>
+                                            <div class="col-8 col-xxl-10">
+                                                <div
+                                                    class="mt-2 mt-xxl-0 ps-3 d-flex justify-content-between align-items-center">
+                                                    <div class="d-flex flex-column">
+                                                        <span class="d-flex fs-6">{{"main-Zealand" | translate}}</span>
+                                                        <span class="d-flex small fw-normal theme-text-accent-one">2,214
+                                                            {{"main-hotels" | translate}}</span>
+                                                    </div>
+                                                    <div class="d-flex">
+                                                        <a routerLink="/tours" class="link-btn"><span><i
+                                                                    class="bi bi-arrow-up-right"></i></span></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- repetable -->
+                                <div class="col-12 col-lg-3">
+                                    <div class="theme-bg-white mb-5">
+                                        <div class="row g-0 align-items-center">
+                                            <div class="col-4 col-xxl-2 overflow-hidden rounded-circle">
+                                                <div class="overflow-hidden">
+                                                    <figure class="mb-0 img-effect">
+                                                        <img src="assets/../../../assets/images/destinations/destination10.jpg"
+                                                            class="img-fluid" alt="flight-destination-one"
+                                                            title="flight-destination-one">
+                                                    </figure>
+                                                </div>
+                                            </div>
+                                            <div class="col-8 col-xxl-10">
+                                                <div
+                                                    class="mt-2 mt-xxl-0 ps-3 d-flex justify-content-between align-items-center">
+                                                    <div class="d-flex flex-column">
+                                                        <span class="d-flex fs-6">{{"main-Peru" | translate}}</span>
+                                                        <span class="d-flex small fw-normal theme-text-accent-one">9,345
+                                                            {{"main-hotels" | translate}}</span>
+                                                    </div>
+                                                    <div class="d-flex">
+                                                        <a routerLink="/tours" class="link-btn"><span><i
+                                                                    class="bi bi-arrow-up-right"></i></span></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- repetable -->
+                                <div class="col-12 col-lg-3">
+                                    <div class="theme-bg-white mb-5">
+                                        <div class="row g-0 align-items-center">
+                                            <div class="col-4 col-xxl-2 overflow-hidden rounded-circle">
+                                                <div class="overflow-hidden">
+                                                    <figure class="mb-0 img-effect">
+                                                        <img src="assets/../../../assets/images/destinations/destination11.jpg"
+                                                            class="img-fluid" alt="flight-destination-one"
+                                                            title="flight-destination-one">
+                                                    </figure>
+                                                </div>
+                                            </div>
+                                            <div class="col-8 col-xxl-10">
+                                                <div
+                                                    class="mt-2 mt-xxl-0 ps-3 d-flex justify-content-between align-items-center">
+                                                    <div class="d-flex flex-column">
+                                                        <span class="d-flex fs-6">{{"main-France" | translate}}</span>
+                                                        <span class="d-flex small fw-normal theme-text-accent-one">2,365
+                                                            {{"main-hotels" | translate}}</span>
+                                                    </div>
+                                                    <div class="d-flex">
+                                                        <a routerLink="/tours" class="link-btn"><span><i
+                                                                    class="bi bi-arrow-up-right"></i></span></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- repetable -->
+                                <div class="col-12 col-lg-3">
+                                    <div class="theme-bg-white mb-5">
+                                        <div class="row g-0 align-items-center">
+                                            <div class="col-4 col-xxl-2 overflow-hidden rounded-circle">
+                                                <div class="overflow-hidden">
+                                                    <figure class="mb-0 img-effect">
+                                                        <img src="assets/../../../assets/images/destinations/destination12.jpg"
+                                                            class="img-fluid" alt="flight-destination-one"
+                                                            title="flight-destination-one">
+                                                    </figure>
+                                                </div>
+                                            </div>
+                                            <div class="col-8 col-xxl-10">
+                                                <div
+                                                    class="mt-2 mt-xxl-0 ps-3 d-flex justify-content-between align-items-center">
+                                                    <div class="d-flex flex-column">
+                                                        <span class="d-flex fs-6">{{"main-Paris" | translate}}</span>
+                                                        <span class="d-flex small fw-normal theme-text-accent-one">4,652
+                                                            {{"main-hotels" | translate}}</span>
+                                                    </div>
+                                                    <div class="d-flex">
+                                                        <a routerLink="/tours" class="link-btn"><span><i
+                                                                    class="bi bi-arrow-up-right"></i></span></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- repetable -->
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="special-offers" id="offers">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5">
+                    <h4 class="fs-2 fw-bold theme-text-secondary mb-0">{{"main-Special Offers" | translate}}</h4>
+                    <p class="mb-0 theme-text-accent-one">
+                        {{"main-These popular destinations have a lot to offer" |translate}}
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-6 mb-3 mb-md-0 overflow-hidden hoverShine">
+                    <div class="box product01">
+                        <div class="content">
+                            <p class="fs-1 theme-heading theme-text-white mb-4">
+                                {{"main-banner1" | translate }}
+                            </p>
+                            <div class="custom-button">
+                                <a routerLink="/tours" class="btn btn-shop small">
+                                    Learn More
+                                    <i class="bi bi-arrow-up-right fs-6 ms-2"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 mb-3 mb-md-0 overflow-hidden hoverShine">
+                    <div class="box product02">
+                        <div class="content">
+                            <p class="fs-6 mb-2 theme-text-white">{{"main-Enjoy Summer Deals" | translate}}</p>
+                            <p class="fs-1 theme-heading theme-text-white mb-4">{{"main-banner2"| translate }}</p>
+                            <div class="custom-button">
+                                <a routerLink="/tours" class="btn btn-shop small">
+                                    View Deal
+                                    <i class="bi bi-arrow-up-right fs-6 ms-2"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials py-5" id="review">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-6">
+                    <h4 class="fs-2 fw-bold theme-text-secondary mb-0">{{"main-sayingUs"| translate}}
+                    </h4>
+                </div>
+                <div class="col-12 col-lg-6 align-self-center justify-content-end d-flex">
+                    <div class="d-flex">
+                        <div class="d-flex flex-column text-end mt-3 mt-lg-0">
+                            <span class="fs-3 theme-text-accent-one">13m+</span>
+                            <span class="font-extra-small theme-text-accent-one">
+                                {{"main-HappyPeoples"| translate}}</span>
+                        </div>
+                        <div class="d-flex flex-column text-end mt-3 mt-lg-0 ms-5">
+                            <span class="fs-3 theme-text-accent-one">4.88</span>
+                            <span class="font-extra-small theme-text-accent-one">
+                                {{"main-OverallRating" | translate}}
+                            </span>
+                            <span class="text-warning"><i class="bi bi-star-fill me-1 extra-text-color"></i>
+                                <i class="bi bi-star-fill me-1 extra-text-color"></i>
+                                <i class="bi bi-star-fill me-1 extra-text-color"></i>
+                                <i class="bi bi-star-fill me-1 extra-text-color"></i>
+                                <i class="bi bi-star-fill me-1 extra-text-color"></i></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- testimonials-->
+            <div class="mt-5">
+                <div class="row">
+                    <div class="col-12 col-lg-4 position-relative">
+                        <div class="client-con p-5 mt-5 mt-lg-0 theme-box-shadow">
+                            <h4 class="mb-3 fs-6 theme-text-primary">{{"main-commentUserName1" | translate}}</h4>
+                            <p class="mb-0 theme-text-accent-two lh-lg small">"{{"main-commentUser1" | translate}}"
+                            </p>
+                            <div class="d-flex flex-column justify-content-center mt-3 pt-3 border-top">
+                                <div class="d-flex align-items-center">
+                                    <div class="flex-shrink-0">
+                                        <figure class="mb-0 avatar">
+                                            <img src="assets/../../../assets/images/customer/avatar01.png"
+                                                class="img-fluid" alt="client review">
+                                        </figure>
+                                    </div>
+                                    <div class="flex-grow-1 ms-3">
+                                        <span class="mt-2 theme-text-accent-one">Client Johna</span>
+                                        <p class="mb-0 theme-text-accent-two small">{{"main-client1" | translate}}</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- repeatable-->
+                    <div class="col-12 col-lg-4 position-relative">
+                        <div class="client-con p-5 mt-5 mt-lg-0 theme-box-shadow">
+                            <h4 class="mb-3 fs-6 theme-text-primary">{{"main-commentUserName2" | translate}}</h4>
+                            <p class="mb-0 theme-text-accent-two lh-lg small">"{{"main-commentUser2" | translate}}"</p>
+                            <div class="d-flex flex-column justify-content-center mt-3 pt-3 border-top">
+                                <div class="d-flex align-items-center">
+                                    <div class="flex-shrink-0">
+                                        <figure class="mb-0 avatar">
+                                            <img src="assets/../../../assets/images/customer/avatar02.png"
+                                                class="img-fluid" alt="client review">
+                                        </figure>
+                                    </div>
+                                    <div class="flex-grow-1 ms-3">
+                                        <span class="mt-2 theme-text-accent-one">Courtney Henry</span>
+                                        <p class="mb-0 theme-text-accent-two small">{{"main-client2" |translate}}</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- repeatable-->
+                    <div class="col-12 col-lg-4 position-relative">
+                        <div class="client-con p-5 mt-5 mt-lg-0 theme-box-shadow">
+                            <h4 class="mb-3 fs-6 theme-text-primary">{{"main-commentUserName3" | translate}}</h4>
+                            <p class="mb-0 theme-text-accent-two lh-lg small">"{{"main-commentUser3" | translate}}"</p>
+                            <div class="d-flex flex-column justify-content-center mt-3 pt-3 border-top">
+                                <div class="d-flex align-items-center">
+                                    <div class="flex-shrink-0">
+                                        <figure class="mb-0 avatar">
+                                            <img src="assets/../../../assets/images/customer/avatar03.png"
+                                                class="img-fluid" alt="client review">
+                                        </figure>
+                                    </div>
+                                    <div class="flex-grow-1 ms-3">
+                                        <span class="mt-2 theme-text-accent-one">Mustafa Ahamad</span>
+                                        <p class="mb-0 theme-text-accent-two small">{{"main-client3" | translate}}</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- repeatable-->
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- blog/news section -->
+    <!-- destinations section -->
+
+    <!-- wonderful experience -->
+    <!-- subscription section -->
+    <section class="py-5 theme-bg-primary">
+        <div class="container">
+            <div class="row justify-between items-center">
+                <div class="col-12 col-lg-6">
+                    <div class="d-flex  align-items-center">
+                        <img src="assets/../../../assets/images/icons/subscribe-icon.png" alt="subscribe"
+                            class="img-fluid">
+                        <div class="ms-3">
+                            <h4 class="text-26 text-white fw-600">
+                                {{"main-Journey" | translate}}
+                            </h4>
+                            <p class="text-white">
+                                {{"main-signUp" | translate}}</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-5 offset-lg-1 align-self-center">
+                    <div class="input-group subs-form">
+                        <input type="text" class="form-control border-0" placeholder="{{'main-YourEmail' | translate}}"
+                            aria-label="Your Email" aria-describedby="button-addon2">
+                        <button class="btn btn-search" type="button" id="button-addon2">
+                            {{"main-subscribe" |translate}}</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- footer section-->
+    <app-footer></app-footer>
+    <!-- js file -->
+    <!-- <script src="../../../assets/js/bootstrap.bundle.min.js"></script>
+    <script src="../../../assets/js/glightbox.min.js"></script>
+    <script src="../../../assets/js/jquery.min.js"></script>
+    <script src="../../../assets/js/main.js"></script> -->
+</div>

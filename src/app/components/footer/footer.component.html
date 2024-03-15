@@ -1,0 +1,69 @@
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-sm-6 col-lg-3 mb-5 mb-lg-0">
+                <h5 class="mb-5 fs-6">{{'footer-ContactUs'|translate}}</h5>
+                <div class="flex-grow-1">
+                    {{'footer-CustomerCare'|translate}}<br>
+                    <span class="fs-5 theme-text-primary">{{companyList[0].phone}}</span>
+                </div>
+                <div class="flex-grow-1 mt-3">
+                    {{'footer-NeedLiveSupport?'|translate}}<br>
+                    <a href="#" class="fs-5 theme-text-primary">{{companyList[0].email}}</a>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-2 mb-5 mb-lg-0">
+                <div class="d-flex">
+                    <h5 class="mb-5 fs-6">{{'footer-Company'|translate}}</h5>
+                </div>
+                <div class="d-flex">
+                    <ul class="fl-menu">
+                        <li class="nav-item"><a routerLink="/home">{{'footer-Home'|translate}}</a></li>
+                        <li class="nav-item"><a routerLink="/about">{{'footer-AboutUs'|translate}}</a></li>
+                        <li class="nav-item"><a routerLink="/destinations">{{'footer-Destinations'|translate}}</a></li>
+                        <li class="nav-item"><a routerLink="/packages">{{'footer-Packages'|translate}}</a></li>
+                        <li class="nav-item"><a routerLink="/contact">{{'footer-ContactUs'|translate}}</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-2 mb-5 mb-lg-0">
+                <h5 class="mb-5 fs-6">{{"footer-Support" | translate}}</h5>
+                <div class="mt-5">
+                    <ul class="fl-menu">
+                        <li class="nav-item"><a routerLink="/home">{{'footer-LegalNotice'|translate}}</a>
+                        </li>
+                        <li class="nav-item"><a routerLink="/home">{{'footer-PrivacyPolicy'|translate}}</a>
+                        </li>
+                        <li class="nav-item"><a routerLink="/home">
+                                {{"footer-TermsAndConditions"|translate}}</a></li>
+                        <li class="nav-item"><a routerLink="/contact">{{'footer-Sitemap'|translate}}</a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="row">
+            <div class="col-12 col-lg-3 mt-lg-5">
+                <p class="pt-2 mb-0 small theme-text-accent-one">&copy; {{'footer-Reserved'|translate}}
+                </p>
+            </div>
+            <div class="col-12 col-lg-6 mt-5">
+                <ul class="footer-link d-flex flex-row flex-wrap justify-content-lg-center align-items-center">
+                    <li><a routerLink='/home'>{{'footer-Privacy'|translate}}</a></li>
+                    <li><a routerLink='/home'>{{'footer-Terms'|translate}}</a></li>
+                    <li><a routerLink="/contact">{{'footer-SiteMap'|translate}}</a></li>
+                </ul>
+            </div>
+            <div class="col-12 col-lg-3 mt-5">
+                <div class="d-flex social justify-content-lg-end">
+                    <a href="{{companyList[0].facebook}}" class="fs-4 pe-3"><i class="bi bi-facebook"></i></a>
+                    <a href="{{companyList[0].instagram}}" class="fs-4 pe-3"><i class="bi bi-instagram"></i></a>
+                    <a href="{{companyList[0].telegram}}" class="fs-4 pe-3"><i class="bi bi-telegram"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Scroll To Top Start-->
+    <a routerLink="/home" class="scrollToTop"><i class="bi bi-chevron-double-up"></i></a>
+</footer>

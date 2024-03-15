@@ -1,0 +1,252 @@
+<div>
+    <!-- Preloader -->
+    <!-- <div id="preloader"></div> -->
+    <!-- Start-Header-Section -->
+    <app-header></app-header>
+    <!-- Banner-area -->
+    <section class="same-section-spacing bg-banner">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="banner-box">
+                        <h2>{{"tour-tour" | translate}}</h2>
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item"><a routerLink="/home">{{"dest-home" | translate}}</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">{{"tour-tour" | translate}}</li>
+                            </ol>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End-banner-area -->
+    <!-- Start-Package-Section -->
+    <section class="ws-section-spacing bg-gray">
+        <div class="container">
+            <div class="row masonry-item">
+                <div *ngFor="let item of packagesList" class="col-lg-4 col-md-6 col-sm-12 masonry">
+                    <div class="package-one">
+                        <div class="img-wapper">
+                            <img src="{{item.image | pipe}}" alt="image">
+                        </div>
+                        <div class="package-content">
+                            <h3><a href="#">{{item.title}}</a></h3>
+                            <p> {{item.dayCount}} {{"tour-dubai-tegi" | translate}} {{item.price}}$</p>
+                            <ul class="ct-action">
+                                <li><a href="/booking" class="booking-btn">{{"tour-book-now" | translate}}</a>
+                                </li>
+                                <li>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="container">
+
+            <div class="row masonry-item">
+                <div class="col-lg-4 col-md-6 col-sm-12 masonry">
+                    <div class="package-one">
+                        <div class="img-wapper">
+                            <img src="../../../assets/images-2/pack-1.jpg" alt="package-img">
+                        </div>
+                        <div class="package-content">
+                            <h3><a href="#">{{"tour-dubai" | translate}}</a></h3>
+                            <p>{{"tour-dubai-tegi" | translate}}/p>
+                            <ul class="ct-action">
+                                <li><a href="#" class="booking-btn">{{"tour-book-now" | translate}}</a>
+                                </li>
+                                <li>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 masonry">
+                    <div class="package-one">
+                        <div class="img-wapper">
+                            <img src="../../../assets/images-2/pack-2.jpg" alt="package-img">
+                        </div>
+                        <div class="package-content">
+                            <h3><a href="#">{{"tour-tailand" | translate}}</a></h3>
+                            <p>{{"tour-tailand-tegi" | translate}}</p>
+                            <ul class="ct-action">
+                                <li><a href="#" class="booking-btn">{{"tour-book-now" | translate}}</a>
+                                </li>
+                                <li>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 masonry">
+                    <div class="package-one">
+                        <div class="img-wapper">
+                            <img src="../../../assets/images-2/pack-3.jpg" alt="package-img">
+                        </div>
+                        <div class="package-content">
+                            <h3><a href="#">{{"tour-brazil" | translate}}</a></h3>
+                            <p>{{"tour-brazil-tegi" | translate}}</p>
+                            <ul class="ct-action">
+                                <li><a href="#" class="booking-btn">{{"tour-book-now" | translate}}</a>
+                                </li>
+                                <li>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 masonry">
+                    <div class="package-one">
+                        <div class="img-wapper">
+                            <img src="../../../assets/images-2/pack-4.jpg" alt="package-img">
+                        </div>
+                        <div class="package-content">
+                            <h3><a href="#">{{"tour-italy" | translate}}</a></h3>
+                            <p>{{"tour-italy-tegi" | translate}}</p>
+                            <ul class="ct-action">
+                                <li><a href="#" class="booking-btn">{{"tour-book-now" | translate}}</a>
+                                </li>
+                                <li>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 masonry">
+                    <div class="package-one">
+                        <div class="img-wapper">
+                            <img src="../../../assets/images-2/pack-5.jpg" alt="package-img">
+                        </div>
+                        <div class="package-content">
+                            <h3><a href="#">{{"tour-england" | translate}}</a></h3>
+                            <p>{{"toru-england-tegi" | translate}}</p>
+                            <ul class="ct-action">
+                                <li><a href="#" class="booking-btn">{{"tour-book-now" | translate}}</a>
+                                </li>
+                                <li>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 masonry">
+                    <div class="package-one">
+                        <div class="img-wapper">
+                            <img src="../../../assets/images-2/pack-6.jpg" alt="package-img">
+                        </div>
+                        <div class="package-content">
+                            <h3><a href="#">{{"toru-india" | translate}}</a></h3>
+                            <p>{{"toru-india-tegi" | translate}}</p>
+                            <ul class="ct-action">
+                                <li><a href="#" class="booking-btn">{{"tour-book-now" | translate}}</a>
+                                </li>
+                                <li>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+    </section>
+    <!-- End-Package-Section -->
+    <!-- offer-section -->
+    <section class="offer-area-three same-section-spacing">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-12">
+                    <div class="add-area ">
+                        <h3>{{"about-image-price" | translate}}</h3>
+                        <h2>{{"about-discount" | translate}} <span class="text-theme">10-30% </span>{{"about-off" |
+                            translate}}</h2>
+                        <p>{{'about-image-title' | translate}}</p>
+                        <a href="#" class="site-button white">{{"about-button-msg" | translate}}</a>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6"></div>
+            </div>
+        </div>
+    </section>
+    <!-- End-offer-section -->
+    <!-- Partner-section -->
+
+    <!-- End-Partner-section -->
+    <!-- Footer-section -->
+    <app-footer></app-footer>
+    <!-- copyright-area -->
+    <div class="footer-bottom text-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="left-text">
+                        {{"global-footer-title" | translate}}
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- End-footer-section -->
+    <!-- Back to top button -->
+    <!-- <a id="btn-to-top" class="show"></a> -->
+    <!-- Jquery.min.js-->
+    <script src="js/jquery.1.12.4.js"></script>
+    <!--bootstrap.min.js-->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap-datepicker.js"></script>
+    <!--slicknav.min.js-->
+    <script src="js/jquery.slicknav.min.js"></script>
+    <!--slickslider.min.js-->
+    <script src="js/slick.min.js"></script>
+    <!-- counterup.min.js -->
+    <script src="js/waypoints.min.js"></script>
+    <script src="js/jquery.counterup.min.js"></script>
+    <!-- magnific-popup.js -->
+    <script src="js/lity.min.js"></script>
+    <!-- isotope.pkgd.min.js -->
+    <script src="js/isotope.pkgd.min.js"></script>
+    <script src="js/../../../assets/images-2loaded.js"></script>
+    <!-- main.js -->
+    <script src="js/main.js"></script>
+
+</div>
+
+
+<!-- Mirrored from weblizar.com/demo/html/jetrip/package-grid.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 13 Feb 2024 19:05:49 GMT -->

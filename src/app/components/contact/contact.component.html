@@ -1,0 +1,123 @@
+<div>
+    <!-- Preloader -->
+    <!-- <div id="preloader"></div> -->
+    <!-- Start-Header-Section -->
+    <app-header></app-header>
+    <!-- Banner-area -->
+    <section class="same-section-spacing bg-banner">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="banner-box">
+                        <h2>{{"contact-contactUs" | translate}}</h2>
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item"><a routerLink="/home">{{"contact-Home" | translate}}</a>
+                                </li>
+                                <li class="breadcrumb-item active" aria-current="page">{{"contact-contactUs" |
+                                    translate}}</li>
+                            </ol>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End-banner-area -->
+    <!-- Start-Package-Section -->
+    <section class="same-section-spacing contact-two-page">
+        <div class="container">
+            <div class="map-container">
+                <iframe
+                    src="https://yandex.ru/map-widget/v1/?um=constructor%3A742165b3196788d85690262f38868a9ed675ad8248de7f268836a514103eedd1&amp;source=constructor"
+                    frameborder="0"></iframe>
+            </div>
+            <div class="row mt-5">
+                <div class="col-lg-5 col-md-12">
+                    <div style="margin-top: 10px;
+                    padding: 5px;" class="contact-info-two">
+                        <h3 class="title-left">{{"contact-contactInfo" | translate}}</h3>
+                        <ul>
+                            <li>
+                                <h4>{{"contact-address" | translate}}</h4>
+                                <p>{{companyList[0].address}}</p>
+                            </li>
+                            <li>
+                                <h4>{{"contact-mobile" | translate}}</h4>
+                                <p>{{companyList[0].phone}}</p>
+                            </li>
+                            <li>
+                                <h4>{{"contact-email" | translate}}</h4>
+                                <p>{{companyList[0].email}}</p>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+                <div style="margin-top: 10px;
+                padding: 5px;" class="col-lg-7 col-md-12">
+                    <h3 class="title-left">{{"contact-form" | translate}}</h3>
+                    <form class="contact-form">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-12">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="uname"
+                                        placeholder="{{'contact-name' | translate}}" name="Name" required="">
+                                </div>
+
+                            </div>
+                            <div class="col-lg-6 col-md-12">
+                                <div class="form-group">
+                                    <input type="null" class="form-control" id="pwd"
+                                        placeholder="{{'contact-email' | translate}}" name="Email" required="">
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-12">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="uname"
+                                        placeholder="{{'contact-subject' | translate}}" name="Name" required="">
+                                </div>
+
+                            </div>
+                            <div class="col-lg-6 col-md-12">
+                                <div class="form-group">
+                                    <input type="null" class="form-control" id="pwd"
+                                        placeholder="{{'contact-phone' | translate}}" name="Email" required="">
+                                </div>
+                            </div>
+                            <div class="col-lg-12">
+                                <textarea class="form-control" rows="5" id="comment"
+                                    placeholder="{{'contact-yourComment' | translate}}"></textarea>
+                            </div>
+                        </div>
+
+                        <button type="submit" class="btn-1">{{"contact-submit" | translate}}</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- End-Package-Section -->
+    <!-- Partner-section -->
+    <!-- End-Partner-section -->
+    <!-- Footer-section -->
+    <app-footer></app-footer>
+    <!-- copyright-area -->
+    <div class="footer-bottom text-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="left-text">
+                        {{"global-footer-title" | translate}}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Mirrored from weblizar.com/demo/html/jetrip/contact-two.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 13 Feb 2024 19:05:55 GMT -->

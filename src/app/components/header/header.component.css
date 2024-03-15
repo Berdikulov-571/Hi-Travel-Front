@@ -1,0 +1,37 @@
+/* Style the select container */
+select {
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid rgb(214, 206, 206);
+    /* Border color */
+    border-radius: 5px;
+    width: 200px;
+    background-color: #fff;
+    /* Background color */
+    color: #333;
+    /* Text color */
+    appearance: none;
+    /* Remove default arrow */
+}
+
+/* Style the options container */
+select option {
+    padding: 10px;
+    font-size: 16px;
+    background-color: #f8f8f8;
+    /* Options background color */
+    color: #333;
+    /* Options text color */
+}
+
+/* Style when option is hovered */
+select option:hover {
+    background-color: #e0e0e0;
+}
+
+/* Style when option is selected */
+select option:checked {
+    background-color: #007bff;
+    color: #fff;
+    /* Selected option text color */
+}

@@ -1,0 +1,44 @@
+@media screen and (min-width: 576px) {
+
+    /* Adjust font size for small devices (e.g., phones) */
+    h1 {
+        font-size: 36px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+
+    /* Adjust font size for medium devices (e.g., tablets) */
+    h1 {
+        font-size: 40px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+
+    /* Adjust font size for large devices (e.g., laptops) */
+    h1 {
+        font-size: 44px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+
+    /* Adjust font size for extra-large devices (e.g., large monitors) */
+    h1 {
+        font-size: 48px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    /* Mobiil qurilmalar uchun */
+    h4 {
+        font-size: 35px;
+        /* Masalan, h4 tegining shrift o'lchamini o'zgartirish */
+    }
+
+    h1 {
+        font-size: 35px;
+    }
+}
