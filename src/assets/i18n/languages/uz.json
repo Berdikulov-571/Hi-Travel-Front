@@ -172,5 +172,13 @@
     "contact-yourComment": "Sizning fikringiz",
     "contact-submit": "Yuborish",
     "global-footer-title": "© 2024 | Barcha huquqlar himoyalangan.",
-    "booking-theTour": "Band qilish"
+    "booking-theTour": "Band qilish",
+    "booking-title": "Uyni orzu qilish uzoq kutilgan sayohat uchun Unutilmas dam olish uchun uy",
+    "booking-select": "Turni tanlang",
+    "booking-firstName": "Ismingiz",
+    "booking-lastName": "Familiyangiz",
+    "booking-adults": "Kattalar",
+    "booking-childs": "Bolalar",
+    "booking-checkin": "Belgilanish",
+    "booking-checkout": "Ro'yxatdan o'chirilish"
 }
