@@ -23,6 +23,7 @@ export class BookingComponent {
   }
 
   async CreateBooking() {
+    console.log('works')
     let InputFirstName = document.querySelector('#firstName') as HTMLInputElement;
     let InputLastName = document.querySelector('#lastName') as HTMLInputElement;
     let InputEmail = document.querySelector('#email') as HTMLInputElement;
@@ -35,17 +36,7 @@ export class BookingComponent {
 
     let selected = this.packagesList.find(x => x.id === parseInt(InputSelectedTour.value));
 
-    let formData = new FormData();
-    formData.append('firstName', InputFirstName.value);
-    formData.append('lastName', InputLastName.value);
-    formData.append("idPackage", `${selected!.id}`);
-    formData.append("personCount", `${(parseInt(InputAdults.value) + parseInt(InputChilds.value))}`);
-    formData.append("price", `${selected!.price}`);
-    formData.append("phoneNumber", InputPhoneNumber.value);
-    formData.append("email", InputEmail.value);
-    formData.append("startDate", `${new Date(InputCheckIn.value)}`);
-    formData.append("endDate", `${new Date(InputCheckOut.value)}`);
-    formData.append("date", Date.now.toString());
+    console.log('works2')
 
     console.log(InputFirstName.value);
     console.log(InputLastName.value);
@@ -58,10 +49,25 @@ export class BookingComponent {
     console.log(InputSelectedTour.value);
     console.log(selected?.id);
 
+    let formData = new FormData();
+    formData.append('firstName', InputFirstName.value);
+    formData.append('lastName', InputLastName.value);
+    formData.append("idPackage", `${selected!.id}`);
+    formData.append("personCount", `${(parseInt(InputAdults.value) + parseInt(InputChilds.value))}`);
+    formData.append("price", `${selected!.price}`);
+    formData.append("phoneNumber", InputPhoneNumber.value);
+    formData.append("email", InputEmail.value);
+    formData.append("startDate", InputCheckIn.value);
+    formData.append("endDate", InputCheckOut.value);
+
+
+
+
     (this.bookingService.createCompany(formData))
       .subscribe(response => {
         console.log(response);
-        alert("Salomat  rahmat! 👌");
+        alert("Sucesfully Sended");
+        location.reload();
       })
   }
 }
