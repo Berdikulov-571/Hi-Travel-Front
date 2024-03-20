@@ -27,9 +27,7 @@
                             <div class="col-lg-12">
                                 <div class="center-title ">
                                     <h2 class="title">{{"booking-theTour" | translate}}</h2>
-                                    <h4 class="sub-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
-                                        do eiusmod
-                                        tempor incididunt ut labore et dolore magna aliqua minim veniam.</h4>
+                                    <h4 class="sub-title">{{"booking-title" | translate}}</h4>
                                 </div>
                             </div>
                         </div>
@@ -37,24 +35,27 @@
                             <div class="row">
                                 <div class="col-lg-6 col-md-12 col-sm-12">
                                     <div class="form-group">
-                                        <input type="text" id="firstName" placeholder="Your First Name">
+                                        <input type="text" id="firstName"
+                                            placeholder='{{"booking-firstName" | translate}}'>
                                     </div>
                                     <div class="form-group">
-                                        <input type="text" id="email" placeholder="Email">
+                                        <input type="text" id="email" placeholder='{{"main-YourEmail" | translate}}'>
                                     </div>
                                 </div>
                                 <div class="col-lg-6 col-md-12 col-sm-12">
                                     <div class="form-group">
-                                        <input type="text" id="lastName" placeholder="Your Last Name">
+                                        <input type="text" id="lastName"
+                                            placeholder='{{"booking-lastName" | translate}}'>
                                     </div>
                                     <div class="form-group">
-                                        <input type="text" id="phoneNumber" placeholder="Phone Number">
+                                        <input type="text" id="phoneNumber"
+                                            placeholder='{{"footer-CustomerCare" | translate}}'>
                                     </div>
                                 </div>
                                 <div class="col-lg-6 col-md-12 col-sm-12">
                                     <div class="form-group icon_down">
                                         <select id="selectElement" class="selectpicker search-fields form-control">
-                                            <option value="0"> Select Tour</option>
+                                            <option value="0">{{"booking-select" | translate}}</option>
                                             <!-- <option value="1"> Russia</option>
                                             <option value="2"> Japan</option>
                                             <option value="3"> Red Fort</option>
@@ -67,35 +68,38 @@
                                 </div>
                                 <div class="col-lg-3 col-md-6 col-sm-12">
                                     <div class="form-group">
-                                        <input type="number" id="adults" class="zt-control" placeholder="Adults" min="1"
-                                            max="100">
+                                        <input type="number" id="adults" class="zt-control"
+                                            placeholder='{{"booking-adults" | translate}}' min="1" max="100">
                                     </div>
 
                                 </div>
                                 <div class="col-lg-3  col-md-6 col-sm-12 pl-0">
                                     <div class="form-group">
-                                        <input type="number" class="zt-control" id="childs" placeholder="Childs" min="1"
-                                            max="100">
+                                        <input type="number" class="zt-control" id="childs"
+                                            placeholder='{{"booking-childs" | translate}}' min="1" max="100">
                                     </div>
                                 </div>
 
                                 <div class="col-lg-6 col-md-12 col-sm-12">
                                     <div class="form-group date input-datepicker">
                                         <input type="text" class="form-control " id="datepicker-2" name="DateFron"
-                                            data-date-format="yyyy-mm-dd" placeholder="Check In" value="">
+                                            data-date-format="yyyy-mm-dd"
+                                            placeholder='{{"booking-checkin" | translate}}' value="">
                                         <span class="input-group-addon"><i class="far fa-calendar-alt"></i></span>
                                     </div>
                                 </div>
                                 <div class="col-lg-6 col-md-12 col-sm-12">
                                     <div class="form-group  input-datepicker">
                                         <input type="text" class="form-control " id="datepicker-3" name="DateFron"
-                                            data-date-format="yyyy-mm-dd" placeholder="Check Out" value="">
+                                            data-date-format="yyyy-mm-dd"
+                                            placeholder='{{"booking-checkout" | translate}}' value="">
                                         <span class="input-group-addon"><i class="far fa-calendar-alt"></i></span>
                                     </div>
                                 </div>
 
                                 <div class="col-lg-12 mt-3">
-                                    <button (click)="CreateBooking()" type="submit" class="btn-tour"> Search</button>
+                                    <button (click)="CreateBooking()" type="submit" class="btn-tour">{{"contact-submit"
+                                        | translate}}</button>
                                 </div>
                             </div>
                         </div>
@@ -109,12 +113,11 @@
             <div class="row">
                 <div class="col-lg-6 col-md-12">
                     <div class="add-area ">
-                        <h3>1000 $ for person - 6 nights</h3>
-                        <h2>Discount <span class="text-theme">10-30% </span> Off</h2>
-                        <p>If you’re looking for a truly memorable family break here you find the lowest price on the
-                            right hotel for you. It's indescribable. Stay up to date and check out the deals for these
-                            trending destinations.</p>
-                        <a href="#" class="site-button white">See Promotion Tours</a>
+                        <h3>{{"about-image-price" | translate}}</h3>
+                        <h2>{{"about-discount" | translate}} <span class="text-theme">10-30% </span>{{"about-off" |
+                            translate}}</h2>
+                        <p>{{"about-image-title" | translate}}</p>
+                        <a href="#" class="site-button white">{{"about-button-msg" | translate}}</a>
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-6"></div>
