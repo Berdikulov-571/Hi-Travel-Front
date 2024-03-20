@@ -29,7 +29,8 @@
                 <div *ngFor="let item of packagesList" class="col-lg-4 col-md-6 col-sm-12 masonry">
                     <div class="package-one">
                         <div class="img-wapper">
-                            <img src="{{item.image | pipe}}" alt="image">
+                            <img style="width: 100%;
+                            height: 300px;" src="{{item.image | pipe}}" alt="image">
                         </div>
                         <div class="package-content">
                             <h3><a href="#">{{item.title}}</a></h3>
