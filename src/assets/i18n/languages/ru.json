@@ -172,5 +172,13 @@
     "contact-yourComment": "Ваш комментарий",
     "contact-submit": "Отправить",
     "global-footer-title": "© 2024 | Все права защищены.",
-    "booking-theTour": "Забронировать тур"
+    "booking-theTour": "Забронировать тур",
+    "booking-title": "Жилье мечты для долгожданного путешествия Дом для запоминающегося отдыха",
+    "booking-select": "Выбрать тур",
+    "booking-firstName": "Имя",
+    "booking-lastName": "Фамилия",
+    "booking-adults": "Взрослые",
+    "booking-childs": "Дети",
+    "booking-checkin": "Регистрироваться",
+    "booking-checkout": "Проверить"
 }
