@@ -173,5 +173,13 @@
     "contact-yourComment": "Your Comment",
     "contact-submit": "Submit",
     "global-footer-title": "Copyright © 2024 | All Rights Reserved.",
-    "booking-theTour": "Book The Tour"
+    "booking-theTour": "Book The Tour",
+    "booking-title": "Dream home for a long-awaited trip Home for a memorable holiday",
+    "booking-select": "Select Tour",
+    "booking-firstName": "First Name",
+    "booking-lastName": "Last Name",
+    "booking-adults": "Adults",
+    "booking-childs": "Childs",
+    "booking-checkin": "Check In",
+    "booking-checkout": "Check Out"
 }
