@@ -6,7 +6,6 @@ export interface CreateBookingCommand {
     "price": number,
     "phoneNumber": string,
     "email": string,
-    "date": Date,
     "startDate": Date,
     "endDate": Date
 }
